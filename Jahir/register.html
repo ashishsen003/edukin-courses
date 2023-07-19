@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    
+    <div id="header"> 
+        <h1> Online Admission Form </h1>
+    </div>
+    <div id="cont">
+        <h2>Personal Details </h2>
+        <div id="personal">
+            <div>
+                <label for="">Student's Name</label>
+                <input type="text" id="studentName" placeholder="Student Name " required>
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="text" id="studentEmail" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="">Gender</label>
+                <select  id="gender">
+                   <option value="">Select</option>
+                   <option value="Male">Male</option>
+                   <option value="Female">Female</option>
+                </select>
+           </div>
+            <div>
+                <label for="">Date of Birth</label>
+                <input type="date" id="date">
+            </div>
+            <div>
+                <label for="">Aadhar Number</label>
+                <input type="number"  id="AadharNumber" placeholder="Aadhar Number">
+            </div>
+            <div>
+                <label for="">Address</label>
+                <input type="text" name="" id="address" placeholder="Address">
+            </div>
+           <div>
+                <label for="">City</label>
+                <input type="text"  id="city" placeholder="City">
+           </div>
+            <div> 
+                <label for="">State</label>
+                 <select id="state" >
+                    <option value="">Select</option>
+                    <option value="Andaman And Nicobar" >Andaman And Nicobar</option>
+                    <option value="Andhra Pradesh" >Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar" >Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chatisgarh">Chatisgarh</option>
+                    <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Goa" >Goa</option>
+                    <option value="Gujrat" >Gujrat</option>
+                    <option value="Haryana" >Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerla">Kerla</option>
+                    <option value="Lakshadweep Islands">Lakshadweep Islands</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur" >Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Negalad">Negalad</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punucherry">Punucherry</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim" >Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telegana">Telegana</option>
+                    <option value="Tripura" >ripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand" >Uttarakhand</option>
+                    <option value="West Bengal" >West Bengal</option>
+               </select>
+            </div>
+            <div>
+                <label for="">Pin Code</label>
+                <input type="number"  id="pinCode" placeholder="Pin Code" required>
+            </div>
+           <div>
+                <label for="">Religion</label>
+                <input type="text" id="religion" placeholder="Religion">
+           </div>
+            <div> 
+                <label for="">Category</label>
+               <input type="text" id="category" placeholder="Category">
+            </div>
+            <div>
+                <label for="">Nationality</label>
+                <input type="text"  id="nationality" placeholder="Nationality">
+            </div>
+            <div> 
+                <label for="">Class</label>
+                <select  id="standard">
+                   <option value="">select</option>
+                   <option value="1">1</option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="4">4</option>
+                   <option value="5">5</option>
+                 </select>
+            </div>
+           <div>
+                <label for="">Medium</label>
+                <select  id="medium">
+                   <option value="">Select</option>
+                   <option value="Hindi">Hindi</option>
+                   <option value="English">English</option>
+                </select>
+           </div>
+        </div>
+        <h2>Parent/Guardian Details</h2>
+        <div>
+            <div id="parent">
+                <div>
+                    <label for="">Father's Name</label>
+                    <input type="text"  id="fatherName" placeholder="Father's Name">
+                </div>
+                <div>
+                    <label for="">Father's Occupation</label>
+                    <input type="text"  id="fatherOccp" placeholder="Father's Occupation">
+                </div>
+                <div>
+                    <label for="">Father's Contact</label>
+                    <input type="number"  id="fatherContact" placeholder="Father's Contact">
+                </div>
+                <div>
+                    <label for="">Mother's Name</label>
+                    <input type="text"  id="motherName" placeholder="Mother's Name">
+                </div>
+                <div>
+                    <label for="">Mother's Occupation</label>
+                    <input type="text"  id="motherOccp" placeholder="Mother's Occupation">
+                </div>
+                <div>
+                    <label for="">Mother's Contact</label>
+                    <input type="number"  id="motherContact" placeholder="Mother's Contact">
+                </div>
+            </div>
+        </div>
+        <h2>Previous School Details</h2>
+        <div id="previousStandards">
+            <div>
+                <label for="">Previous Class</label>
+                <input type="number"  id="lastClass" placeholder="Previous Class">
+            </div>
+           <div>
+                <label for="">Previous School Name</label>
+                <input type="text"  id="schoolName" placeholder="Previous School Name">
+           </div>
+           <div>
+                <label for="">Percentage/Grade</label>
+                <input type="number"  id="percentage" placeholder="Percentage/Grade">  
+           </div>
+           <div>
+                <label for="">Result(Pass/Fail)</label>
+               <input type="text"  id="resultPrevious" placeholder="Result(Pass/Fail)">
+           </div>
+        </div>
+        
+        <div>
+            <button id="btn"  > <a href="login.html"> Submit</a> </button>
+        </div>
+    </div>
+</body>
+</html>

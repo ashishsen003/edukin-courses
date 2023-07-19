@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+   <form action="">
+    <div class="login-form">
+        <div id="circleDiv">
+             <div id="circle"></div>
+             <div>Loading....</div>
+        </div>
+        <!-- <div id="circleDiv1"> <div id="circle1"></div></div> -->
+       <!-- <div action=""> -->
+        <div class="form-title">Student Login</div>
+        <div class="form-input">
+            <label for="username"> Username</label>
+            <input type="text" id="username" required>
+        </div>
+        <div class="form-input">
+            <label for="password"> Password</label>
+            <input type="password" id="password" required >
+        </div>
+
+        <div class="captcha">
+            <label for="captcha-input"> Enter Captcha</label>
+            <div class="preview"></div>
+            <div class="captcha-form">
+                <input type="text"  id="captcha-form" placeholder="Enter Captcha Here" required>
+                <button class="captcha-refresh">Refresh</button>
+            </div>
+        </div>
+       
+        <div class="form-input">
+            <button type="submit" id="login-btn">Login</button>
+        </div>
+        <p>Don't have an account? <a href="register.html" id="signupLink">Register</a></p>
+       <!-- </form> -->
+    </div>
+   </form>
+</body>
+</html>
+<script src="login.js"></script>
