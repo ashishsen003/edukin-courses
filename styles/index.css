@@ -1,0 +1,626 @@
+body {
+  margin: auto;
+  padding: 0;
+
+  font-family: "Poppins", sans-serif;
+}
+
+/*------> nav bar <------*/
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.nav > div:nth-child(1) {
+  width: 15%;
+  padding-left: 10px;
+}
+
+.nav > div:nth-child(1) a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav > div:nth-child(1)  h1 {
+  font-size: 230%;
+  margin: auto;
+  font-family: 'Bruno Ace SC', cursive;
+  cursor: pointer;
+}
+
+.nav > div:nth-child(2) {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.nav > div:nth-child(2) > a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav > div:nth-child(2) > a:hover {
+  color: red;
+  font-weight: bold;
+}
+
+.nav  button {
+  width: 120px;
+  height: 65px;
+  border: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav  button:hover {
+  background-color: white;
+  color: black;
+  border: solid 0.5px;
+}
+
+/* userhome and user page */
+
+#logout {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+
+#user{
+  width: 70%;
+  margin: auto;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#user >div:nth-child(1){
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+
+
+}
+
+#user > div:nth-child(1) > div{
+  width: 100%;
+}
+
+#user > div:nth-child(1) > div:nth-child(2){
+  justify-content: right;
+}
+
+#user >div:nth-child(1) img{
+  width: 50%;
+}
+
+#username,#email{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*------> nav bar <------*/
+
+/*------> mid part1 <------*/
+
+.mid {
+  width: 100%;
+  margin: auto;
+}
+
+.mid img {
+  width: 100%;
+}
+
+.mid-part1 {
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.mid-part1 > div:nth-child(1) {
+  margin-bottom: 50px;
+  width: 90%;
+  margin: auto;
+}
+
+.mid-part1 img {
+  width: 100%;
+}
+
+#mid-part1-2 {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+#mid-part1-2 img{
+
+  width: 80%;
+}
+/*------> mid part1 <------*/
+
+/*------> mid part2 <------*/
+
+.mid-part2 > div:nth-child(1) {
+  width: 70%;
+  text-align: center;
+  font-size: 200%;
+  margin: auto;
+}
+
+.mid-part2 > div:nth-child(2) {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.mid-part2 > div:nth-child(2) > div:nth-child(2) {
+  width: 60%;
+}
+
+.mid-part2 > div:nth-child(2) > div:nth-child(2) p {
+  line-height: 40px;
+  font-size: 20px;
+}
+
+/*------> mid part2 <------*/
+
+/*------> mid part3 <------*/
+
+.mid-part3 {
+  padding-bottom: 100px;
+  background-color: #fffaf5;
+  padding-top: 100px;
+}
+
+.mid-part3 > div:nth-child(1) {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.mid-part3 > div:nth-child(1) > div:nth-child(1) {
+  width: 80%;
+}
+
+.mid-part3 > div:nth-child(1) > div:nth-child(1) p {
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.mid-part3 > div:nth-child(1) img {
+  width: 100%;
+}
+
+.mid-part3 > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 90%;
+  margin: auto;
+}
+
+.mid-part3 > div:nth-child(2) > div:nth-child(2) {
+  width: 40%;
+  padding-bottom: 60px;
+}
+.mid-part3 > div:nth-child(2) > div:nth-child(2) a {
+  color: rgb(14, 211, 14);
+  text-decoration: none;
+}
+
+.mid-part3 > div:nth-child(2) > div:nth-child(3) {
+  width: 70%;
+  padding-bottom: 40px;
+  line-height: 45px;
+  font-size: 20px;
+}
+
+/*------> mid part3 <------*/
+
+/*------> mid part4 <------*/
+
+.mid-part4 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.mid-part4 > div:nth-child(1) {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.mid-part4 > div:nth-child(2) {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.mid-part4 > div:nth-child(2) > div {
+  width: 100%;
+}
+
+.mid-part4 > div:nth-child(2) > div p {
+  line-height: 45px;
+  font-size: 20px;
+}
+
+#activity {
+  display: flex;
+}
+
+#activity > div:nth-child(1) {
+  width: 100%;
+  line-height: 40px;
+}
+
+#activity li {
+  font-size: 120%;
+}
+
+#activity li:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#activity > div:nth-child(2) {
+  width: 100%;
+}
+
+#activity > div:nth-child(2) img {
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+
+#line1 {
+  width: 2px;
+  background-color: rgb(28, 28, 28);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.mid-part4 > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) {
+  width: 100%;
+}
+
+.mid-part4 > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) img {
+  width: 70%;
+}
+
+.mid-part4 > div:nth-child(2) > div:nth-child(3) {
+  text-align: center;
+}
+
+.mid-part4 > div:nth-child(2) > div:nth-child(3) a {
+  color: rgb(0, 185, 0);
+  text-decoration: none;
+}
+
+/*------> mid part4 <------*/
+
+/*------> mid part5 <------*/
+
+.mid-part5 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.mid-part5 > div:nth-child(1) {
+  width: 90%;
+  margin: auto;
+}
+
+.mid-part5 > div:nth-child(2) {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+.mid-part5 > div:nth-child(2) > div:nth-child(2) input {
+  width: 60%;
+  height: 30px;
+  padding: 20px;
+  border: none;
+  border-bottom: solid 1px;
+}
+
+.mid-part5 > div:nth-child(2) > div:nth-child(2) button {
+  width: 100px;
+  height: 40px;
+  border: solid 0.3px;
+  font-size: 30px;
+  background-color: white;
+}
+
+.mid-part5 > div:nth-child(2) > div:nth-child(2) button:hover {
+  background-color: black;
+  color: white;
+}
+
+.mid-part5 > div:nth-child(2) > div:nth-child(3) {
+  width: 35%;
+}
+
+/*------> mid part5 <------*/
+
+/*------> footer <------*/
+
+.footer {
+  background-color: #fffaf5;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer > div:nth-child(1) {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+
+  justify-content: space-around;
+}
+
+.footer > div:nth-child(1) > div {
+  width: 100%;
+}
+
+#line2 {
+  width: 2px;
+  background-color: rgb(28, 28, 28);
+  margin-left: 70px;
+  margin-right: 70px;
+  transform: rotate(10deg);
+}
+
+.footer > div:nth-child(1) > div:nth-child(3) > div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px;
+  border-color: lightgray;
+}
+
+.footer > div:nth-child(2) {
+  display: flex;
+  width: 90%;
+  gap: 20px;
+  margin: auto;
+  border-top: solid 1px;
+  border-color: lightgray;
+  justify-content: space-between;
+}
+
+/*------> footer <------*/
+
+/*------> media queries <------*/
+
+@media screen and (min-width: 200px) and (max-width: 770px) {
+  body {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav > div:nth-child(1) {
+    font-size: 20px;
+    width: 40%;
+  }
+
+  .nav > div:nth-child(1) h1 {
+    font-size: 28px;
+  }
+  .nav > div:nth-child(2) {
+    display: none;
+  }
+
+  /*------> nav bar <------*/
+
+  #user{
+    width: 80%;
+    padding: 20px;
+  }
+
+  #user img{
+    width: 50%;
+  }
+
+  #username,#email{
+    flex-direction: column;
+  }
+
+  /*------> mid part1 <------*/
+
+  .mid-part1 > div:nth-child(2) div {
+    margin: auto;
+    width: 50%;
+  }
+  .mid-part1 > div:nth-child(2) {
+    flex-direction: column;
+  }
+
+  /*------> mid part1 <------*/
+
+  /*------> mid part2 <------*/
+
+  .mid-part2 > div:nth-child(1) {
+    width: 90%;
+    font-size: 100%;
+  }
+
+  .mid-part2 > div:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .mid-part2 > div:nth-child(2) > div:nth-child(2) {
+    width: 100%;
+    text-align: center;
+  }
+
+  /*------> mid part2 <------*/
+
+  /*------> mid part3 <------*/
+
+  .mid-part3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .mid-part3 > div:nth-child(1) {
+    flex-direction: column;
+  }
+
+  .mid-part3 > div:nth-child(1) > div:nth-child(1) {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  .mid-part3 > div:nth-child(1) > div:nth-child(2) {
+    width: 70%;
+    margin: auto;
+  }
+
+  .mid-part3 > div:nth-child(2) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mid-part3 > div:nth-child(2) > div:nth-child(1) {
+    width: 70%;
+    margin: auto;
+  }
+
+  .mid-part3 > div:nth-child(2) > div:nth-child(2) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .mid-part3 > div:nth-child(2) > div:nth-child(3) {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+  }
+
+  /*------> mid part3 <------*/
+
+  /*------> mid part4 <------*/
+
+  .mid-part4 > div:nth-child(1) {
+    width: 90%;
+  }
+
+  .mid-part4 > div:nth-child(2) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #activity {
+    flex-direction: column;
+  }
+
+  #activity > div:nth-child(1) {
+    width: 100%;
+    margin: auto;
+  }
+
+  #activity > div:nth-child(1) ol {
+    display: inline-block;
+  }
+
+  #activity > div:nth-child(2) {
+    display: none;
+  }
+  #line1 {
+    margin: 0;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 1px;
+  }
+
+  /*------> mid part4 <------*/
+
+  /*------> mid part5 <------*/
+
+  .mid-part5 > div:nth-child(1) {
+    width: 90%;
+    margin: auto;
+  }
+
+  .mid-part5 > div:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .mid-part5 > div:nth-child(2) > div:nth-child(1) {
+    width: 40%;
+    margin: auto;
+  }
+
+  .mid-part5 > div:nth-child(2) > div:nth-child(2) {
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .mid-part5 > div:nth-child(2) > div:nth-child(2) input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 90%;
+  }
+  .mid-part5 > div:nth-child(2) > div:nth-child(3) {
+    width: 30%;
+    margin: auto;
+  }
+
+  /*------> mid part5 <------*/
+
+  /*------> footer <------*/
+
+  .footer > div:nth-child(1) {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer > div:nth-child(1) > #line2 {
+    display: none;
+  }
+
+  .footer > div:nth-child(1) > div:nth-child(3) div {
+    flex-direction: column;
+  }
+
+  .footer > div:nth-child(1) > div:nth-child(3) div p {
+    margin: 5px;
+  }
+
+  .footer > div:nth-child(2) {
+    flex-direction: column;
+    gap: 0;
+    border: none;
+  }
+
+  .footer > div:nth-child(2) p {
+    margin: 5px;
+  }
+}
