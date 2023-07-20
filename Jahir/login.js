@@ -35,47 +35,50 @@ let userdata;
         setCaptcha();
     }
     Refresh_Captcha();
-    let username = document.getElementById("username");
+    let email = document.getElementById("email");
     let password = document.getElementById("password");
     let inputCaptchValue= document.querySelector("#captcha-form");
+    let loading = document.getElementById("circleDiv");
 
     document.querySelector("#login-btn").addEventListener("click",function(e){
         e.preventDefault();
         
-        if(username.value && password.value && inputCaptchValue.value)
+        if(email.value && password.value && inputCaptchValue.value)
         {
-            if(username.value &&  password.value && password.value.length>=8)
+            if(email.value &&  password.value && password.value.length>=8)
             {
-                let loading = document.getElementById("circleDiv");
-            
+
                 if(inputCaptchValue.value === captchaValue)
                 {
                     loading.style.display = "flex"
-                    loading.style.flexDirection="column"
-                    getData(username.value,password.value).then(function(res){
-                        loading.style.display = "none"
-                        printData(res)
-                    }).catch((err)=>console.log(err));
+                    loading.style.flexDirection="column";
+                    getData(email.value,password.value)
+                    // loading.style.display="none";
                 }
                 else{
                   alert("Invalid Captcha");
                   Refresh_Captcha()
                   inputCaptchValue.value="";
+                  loading.style.display = "none";
                 }
             }else{
-               alert("Username or Password Incorrect")
+               alert("Email or Password Incorrect")
+               loading.style.display = "none"
             } 
         } 
     })
 
-    let otp = document.getElementById("clickMe");
-
-   function getData (username,password)
+   function getData (email,password)
     {
-        console.log("hello","userName::",username,"Password::",password)
-        return fetch(`https://edukinapi.onrender.com/users?username=${username}&password=${password}`)
+        console.log("hello","userName::",email,"Password:",password)
+        fetch(`http://localhost:3000/users?email=${email}&password=${password}`)
         .then(function(res){
             return res.json();
+        }).then(data=>{
+            printData(data)
+            console.log(data)
+        }).catch(err=>{
+            console.log(err)
         })
     }
 
@@ -83,9 +86,11 @@ let userdata;
         if(res.length)
         {
             alert("Login successful!");
+            loading.style.display = "none"
         }
         else{
             alert("Login failed!");
+            loading.style.display = "none"
         }
     }
     

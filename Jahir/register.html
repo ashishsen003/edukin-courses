@@ -7,9 +7,30 @@
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    
+    <div id="cont1">
+        <div id="logo">
+            <h1>EDUKIN</h1>
+        </div>
+        <div id="nav1">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Testimonial</a></li>
+            </ul>
+        </div>
+        <div id="negivation">
+            <div id="menu" onclick="onClickMenu()">
+               <div id="bar1" class="bar"></div>
+               <div id="bar2" class="bar"></div>
+               <div id="bar3" class="bar"></div>
+            </div>
+        </div>
+   </div>
     <div id="header"> 
         <h1> Online Admission Form </h1>
+        <img src="https://web.schoollog.in/images/Shape9.svg" alt="">
     </div>
     <div id="cont">
         <h2>Personal Details </h2>
@@ -21,6 +42,10 @@
             <div>
                 <label for="">Email</label>
                 <input type="text" id="studentEmail" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="password" id="studentPassword" placeholder="Password" required>
             </div>
             <div>
                 <label for="">Gender</label>
@@ -174,8 +199,9 @@
         </div>
         
         <div>
-            <button id="btn"  > <a href="login.html"> Submit</a> </button>
+            <button id="btn"> <a href="login.html"> Submit</a> </button>
         </div>
     </div>
 </body>
 </html>
+<script src="register.js"></script>
