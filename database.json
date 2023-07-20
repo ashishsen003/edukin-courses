@@ -7,7 +7,13 @@
     ],
 
     "profile": { "name": "typicode" },
-  
+    "users": [
+      {
+        "email":"jp",
+        "password":"jp12345678",
+        "id":"1"
+      }
+    ],
     "courses": [
         {
           "courseName": "Mastering English: From Beginner to Fluent",
