@@ -9,6 +9,96 @@ body {
     background: #f5f5f5;
 }
 
+
+/*------> nav bar starts<------*/
+#cont1 {
+    top: 0;
+    width: 100%;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    background-color:#f5f5f5;
+    color: black;
+    position: sticky;
+    padding: 0 20px;
+    font-size: 20px;
+}
+#logo {
+    width: 10%;
+    padding-left: 10px;
+  }
+  
+#logo h1 {
+    padding-top: 10%;
+    font-size: 200%;
+    margin: auto;
+    font-family: 'Bruno Ace SC', cursive;
+    cursor: pointer;
+}
+
+#nav1 {
+    width: 80%;
+    height: 80px;
+}
+#nav1 ul{
+    width: 80%;
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#nav1 ul li{
+    display: inline-block;
+}
+#nav1 ul li a{
+    text-decoration: none;
+}
+
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color:black;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+#bar1{
+    transform: translateY(-4px);
+    background-color:black;
+}
+#bar3{
+    transform: translateY(4px);
+    background-color:black;
+}
+
+
+@media all and (min-width:481px) and (max-width:768px){
+    #nav1{
+       display: none;
+    }
+    #menu {
+        display: block;
+    }
+}
+@media (max-width:480px){
+    #nav1{
+       display: none;
+    }
+    #menu {
+        display: block;
+        height: 2px;
+    }
+}
+
+/*------> nav bar ends <------*/
 .login-form {
     position: absolute;
     top: 50%;
@@ -19,6 +109,7 @@ body {
     background: #fff;
     padding: 20px 30px;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    border-radius: 5%;
 }
 
  .form-title {
@@ -126,7 +217,6 @@ body {
     
     border-radius: 50%;
     animation: rotate 1s linear infinite;
-    /* transform: rotate(90deg) */
 }
 
 @keyframes rotate{
