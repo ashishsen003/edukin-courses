@@ -1,9 +1,128 @@
 {
     "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
+      { "id": 1, "title": "amol", "author": "typicode" }
     ],
     "comments": [
       { "id": 1, "body": "some comment", "postId": 1 }
     ],
-    "profile": { "name": "typicode" }
+    
+    "profile": { "name": "typicode" },
+
+    "courses": [
+        {
+          "courseName": "Mastering English: From Beginner to Fluent",
+          "image": "https://img.freepik.com/free-photo/education-study-childhood-skill-word_53876-121550.jpg?w=996&t=st=1689840236~exp=1689840836~hmac=f2c371deb45e47f0562fc8c4b00aae111f735a100bbc81a449148191cfc5f4a1",
+          "liveLectures": "300+",
+          "weeklyTests": "50+",
+          "practiceHours": "1500+ Hrs",
+          "mockTests": "100+",
+          "discountedPrice": "₹3600",
+          "originalPrice": "₹4200",
+          "discountPercentage": "14% OFF"
+        },
+        {
+          "courseName": "French for Kids: Fun with Language",
+          "image": "https://img.freepik.com/free-photo/proud-little-boy-with-glasses-graduation-cap_1098-3424.jpg?w=900&t=st=1689840697~exp=1689841297~hmac=0017b098480295ee1f2a45b95dd14f030e84c0935c31e428644434017a01c11d",
+          "liveLectures": "250+",
+          "weeklyTests": "40+",
+          "practiceHours": "1200+ Hrs",
+          "mockTests": "80+",
+          "discountedPrice": "₹2800",
+          "originalPrice": "₹3200",
+          "discountPercentage": "12% OFF"
+        },
+        {
+          "courseName": "Adventures in Spanish: Explore and Learn",
+          "image": "https://img.freepik.com/free-vector/school-boy-with-book_603843-2179.jpg?w=996&t=st=1689841532~exp=1689842132~hmac=eb96442e8d985de859e60364acc8ae577b99e54d76e5f9acbcbf78bd6335dc37",
+          "liveLectures": "200+",
+          "weeklyTests": "30+",
+          "practiceHours": "1000+ Hrs",
+          "mockTests": "60+",
+          "discountedPrice": "₹2400",
+          "originalPrice": "₹2800",
+          "discountPercentage": "14% OFF"
+        },
+        {
+          "courseName": "Mandarin Magic: Kids Edition",
+          "image": "https://img.freepik.com/free-vector/back-chool-template-wooden-board_1308-33554.jpg?w=1380&t=st=1689840768~exp=1689841368~hmac=596a808d1f4eccdccd4c3f37fc5903d61e70638fc271d2e0fc113ce187b5bd69",
+          "liveLectures": "200+",
+          "weeklyTests": "35+",
+          "practiceHours": "1000+ Hrs",
+          "mockTests": "70+",
+          "discountedPrice": "₹2600",
+          "originalPrice": "₹3000",
+          "discountPercentage": "13% OFF"
+        },
+        {
+          "courseName": "German for Young Explorers",
+          "image": "https://img.freepik.com/free-photo/medium-shot-girl-portrait-with-graduation-background_23-2150293611.jpg?w=1060&t=st=1689841240~exp=1689841840~hmac=ad434053b7b55752e7fe07640b006842e2f638bcdb9f5893670ae14951480c93",
+          "liveLectures": "180+",
+          "weeklyTests": "25+",
+          "practiceHours": "900+ Hrs",
+          "mockTests": "50+",
+          "discountedPrice": "₹2200",
+          "originalPrice": "₹2600",
+          "discountPercentage": "15% OFF"
+        },
+        {
+          "courseName": "Italian Journey: Learning Fun",
+          "image": "https://img.freepik.com/free-photo/students-knowing-right-answer_329181-14271.jpg?w=996&t=st=1689841287~exp=1689841887~hmac=5475df24bf37b946e86aae34eeb106978e1cef0c33c8babf3d5215b8d9470d17",
+          "liveLectures": "220+",
+          "weeklyTests": "30+",
+          "practiceHours": "1100+ Hrs",
+          "mockTests": "60+",
+          "discountedPrice": "₹2600",
+          "originalPrice": "₹3000",
+          "discountPercentage": "13% OFF"
+        },
+        {
+          "courseName": "Japanese Explorers: Beginners Welcome",
+          "image": "https://img.freepik.com/free-photo/portrait-girl-playing_23-2148836255.jpg?w=996&t=st=1689841356~exp=1689841956~hmac=8c3d69c3005d8e28aba409f959245f6f406cb707fd99273523d25974e2d2574f",
+          "liveLectures": "190+",
+          "weeklyTests": "30+",
+          "practiceHours": "950+ Hrs",
+          "mockTests": "55+",
+          "discountedPrice": "₹2300",
+          "originalPrice": "₹2700",
+          "discountPercentage": "15% OFF"
+        },
+        {
+          "courseName": "Arabic Adventures: Young Learners",
+          "image": "https://img.freepik.com/free-vector/kids-reading-books-working-computer_1308-16899.jpg?w=1380&t=st=1689841600~exp=1689842200~hmac=28aaa7add3bf16140016b9c954260806bec2e84df6a4f2a5a7770a1546512ed0",
+          "liveLectures": "210+",
+          "weeklyTests": "35+",
+          "practiceHours": "1000+ Hrs",
+          "mockTests": "65+",
+          "discountedPrice": "₹2500",
+          "originalPrice": "₹2900",
+          "discountPercentage": "14% OFF"
+        },
+        {
+          "courseName": "Russian for Kids: A Journey to Russia",
+          "image": "https://img.freepik.com/free-photo/medium-shot-girl-with-space-theme_23-2148892768.jpg?w=826&t=st=1689841387~exp=1689841987~hmac=fd7402b9fceaedb86f8b6b4332147d4d922b210767cc109c0dea97b82d821ded",
+          "liveLectures": "170+",
+          "weeklyTests": "25+",
+          "practiceHours": "850+ Hrs",
+          "mockTests": "45+",
+          "discountedPrice": "₹2100",
+          "originalPrice": "₹2500",
+          "discountPercentage": "16% OFF"
+        },
+        {
+          "courseName": "Portuguese Playtime for Children",
+          "image": "https://img.freepik.com/free-vector/frame-with-happy-kids-smiling_1308-32484.jpg?w=996&t=st=1689841477~exp=1689842077~hmac=3ac66e62954cc7ca38297349b6f96d0dff9e0101326132553e63b3d77ad701fb",
+          "liveLectures": "200+",
+          "weeklyTests": "30+",
+          "practiceHours": "1000+ Hrs",
+          "mockTests": "60+",
+          "discountedPrice": "₹2400",
+          "originalPrice": "₹2800",
+          "discountPercentage": "14% OFF"
+        }
+      ]
+
   }
+
+  
+   
+  
