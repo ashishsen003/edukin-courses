@@ -1,40 +1,284 @@
-/* CSS styles for the testimonial web page */
-
-/* Define styles for header, hero section, testimonial grid, featured testimonial, video testimonials, case studies, CTA, trust elements, and footer */
-
-.header {
-    /* Header styles */
+body {
+  margin: auto;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  transition: 1s;
+  box-sizing: border-box;
   }
   
-  .hero {
-    /* Hero section styles */
+  /*------> nav bar <------*/
+  
+  .nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   }
   
-  .testimonial-grid {
-    /* Testimonial grid styles */
+  .nav > div:nth-child(1) {
+  width: 15%;
+  padding-left: 10px;
   }
   
-  .featured-testimonial {
-    /* Featured testimonial styles */
+  .nav > div:nth-child(1) a{
+  color: black;
+  text-decoration: none;
   }
   
-  .video-testimonials {
-    /* Video testimonials styles */
+  .nav > div:nth-child(1)  h1 {
+  font-size: 230%;
+  margin: auto;
+  font-family: 'Bruno Ace SC', cursive;
+  cursor: pointer;
   }
   
-  .case-studies {
-    /* Case studies styles */
+  .nav > div:nth-child(2) {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  }
+  
+  .nav > div:nth-child(2) > a {
+  color: black;
+  text-decoration: none;
+  }
+  
+  .nav > div:nth-child(2) > a:hover {
+  color: red;
+  font-weight: bold;
+  }
+  
+  .nav  button {
+  width: 120px;
+  height: 65px;
+  border: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  font-size: 18px;
+  cursor: pointer;
+  }
+  
+  .nav  button:hover {
+  background-color: white;
+  color: black;
+  border: solid 0.5px;
+  }
+  
+  .head {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .slide-image{
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .video-testimonials > div{
+  /* border: 1px solid red; */
+  width:80%;
+  margin:auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 40px;
+  column-gap: 30px;
+  place-items: center;
+  padding: 50px 0 50px 0;
+  }
+  
+  .video-testimonials > div iframe{
+    /* margin: auto; */
+    border: 4px solid grey;
+    width: 100%;
+    height: 220px;
+  }
+  
+  .cards {
+    width: 80%;
+    /* border: 1px solid black; */
+    margin: auto;
+  }
+  
+  .card {
+    border-top: 1px solid rgb(187, 187, 187);
+    border-bottom: 1px solid rgb(187, 187, 187);
+    padding: 20px 0 20px 0;
+  
+  }
+  .card > p{
+    line-height: 1.5;
+  }
+  
+  .parent-details{
+    display: flex;
+    /* border: 2px dashed blue; */
+    width: 230px;
+    /* justify-content: space-around; */
+    align-items: center;
+  }
+  
+  .parent-details > div{
+    /* font-size: 16px; */
+    /* border: 1px solid teal; */
+    padding-left: 12px;
+  }
+  .parent-details  img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100px;
   }
   
   .cta {
-    /* Call-to-action styles */
+  /* Call-to-action styles */
   }
   
   .trust-elements {
-    /* Trust elements styles */
+  /* Trust elements styles */
   }
   
   .footer {
-    /* Footer styles */
+  background-color: #fffaf5;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   }
   
+  .footer > div:nth-child(1) {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+  
+  justify-content: space-around;
+  }
+  
+  .footer > div:nth-child(1) > div {
+  width: 100%;
+  }
+  
+  #line2 {
+  width: 2px;
+  background-color: rgb(28, 28, 28);
+  margin-left: 70px;
+  margin-right: 70px;
+  transform: rotate(10deg);
+  }
+  
+  .footer > div:nth-child(1) > div:nth-child(3) > div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px;
+  border-color: lightgray;
+  }
+  
+  .footer > div:nth-child(2) {
+  display: flex;
+  width: 90%;
+  gap: 20px;
+  margin: auto;
+  border-top: solid 1px;
+  border-color: lightgray;
+  justify-content: space-between;
+  }
+  
+  /*------> footer <------*/
+  
+  /*------> media queries <------*/
+  
+  /* @media screen and (min-width: 200px) and (max-width: 770px) {
+    body {
+      width: 100%;
+    }
+    .nav {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .nav > div:nth-child(1) {
+      font-size: 20px;
+      width: 40%;
+    }
+  
+    .nav > div:nth-child(1) h1 {
+      font-size: 28px;
+    }
+    .nav > div:nth-child(2) {
+      display: none;
+    } */
+  
+     /*------> footer <------*/
+  
+     /* .footer > div:nth-child(1) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .footer > div:nth-child(1) > #line2 {
+      display: none;
+    }
+  
+    .footer > div:nth-child(1) > div:nth-child(3) div {
+      flex-direction: column;
+    }
+  
+    .footer > div:nth-child(1) > div:nth-child(3) div p {
+      margin: 5px;
+    }
+  
+    .footer > div:nth-child(2) {
+      flex-direction: column;
+      gap: 0;
+      border: none;
+    }
+  
+    .footer > div:nth-child(2) p {
+      margin: 5px;
+    }
+  } */
+  
+  
+  
+  @media screen and (min-width: 900px) and (max-width: 1235px) {
+    .video-testimonials > div{
+      width:80%;
+      margin:auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 40px;
+      column-gap: 30px;
+      place-items: center;
+      padding: 50px 0 50px 0;
+      }
+      
+      .video-testimonials > div iframe{
+        /* border: 4px solid grey; */
+        width: 100%;
+        height: 175px;
+      }
+      .head{
+        font-size: 20px;
+      }
+  }
+  
+  @media screen and (min-width: 400px) and (max-width: 899px) {
+    .video-testimonials > div{
+      grid-template-columns: repeat(1, 1fr);
+      display: block;
+      display: none;
+      border: 3px dashed red;
+      /* row-gap: 40px;
+      /* column-gap: 30px; */
+      }
+      
+      /* .video-testimonials > div iframe{
+        border: 4px solid grey;
+        width: 100%;
+        height: 175px;
+      } */
+  }
