@@ -7,33 +7,12 @@
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <div id="cont1">
-        <div id="logo">
-            <h1>EDUKIN</h1>
-        </div>
-        <div id="nav1">
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Admissions</a></li>
-                <li><a href="#">Testimonial</a></li>
-            </ul>
-        </div>
-        <div id="negivation">
-            <div id="menu" onclick="onClickMenu()">
-               <div id="bar1" class="bar"></div>
-               <div id="bar2" class="bar"></div>
-               <div id="bar3" class="bar"></div>
-            </div>
-        </div>
-   </div>
     <div id="header"> 
         <h1> Online Admission Form </h1>
         <img src="https://web.schoollog.in/images/Shape9.svg" alt="">
     </div>
     <div id="cont">
-        <h2>Personal Details </h2>
+            <h2>Personal Details </h2>
         <div id="personal">
             <div>
                 <label for="">Student's Name</label>
@@ -49,7 +28,7 @@
             </div>
             <div>
                 <label for="">Gender</label>
-                <select  id="gender">
+                <select  id="gender" required>
                    <option value="">Select</option>
                    <option value="Male">Male</option>
                    <option value="Female">Female</option>
@@ -57,23 +36,23 @@
            </div>
             <div>
                 <label for="">Date of Birth</label>
-                <input type="date" id="date">
+                <input type="date" id="dateOfBirth" required>
             </div>
             <div>
                 <label for="">Aadhar Number</label>
-                <input type="number"  id="AadharNumber" placeholder="Aadhar Number">
+                <input type="number"  id="AadharNumber" placeholder="Aadhar Number" required>
             </div>
             <div>
                 <label for="">Address</label>
-                <input type="text" name="" id="address" placeholder="Address">
+                <input type="text" name="" id="address" placeholder="Address" required>
             </div>
            <div>
                 <label for="">City</label>
-                <input type="text"  id="city" placeholder="City">
+                <input type="text"  id="city" placeholder="City" required>
            </div>
             <div> 
                 <label for="">State</label>
-                 <select id="state" >
+                 <select id="state" required>
                     <option value="">Select</option>
                     <option value="Andaman And Nicobar" >Andaman And Nicobar</option>
                     <option value="Andhra Pradesh" >Andhra Pradesh</option>
@@ -119,19 +98,19 @@
             </div>
            <div>
                 <label for="">Religion</label>
-                <input type="text" id="religion" placeholder="Religion">
+                <input type="text" id="religion" placeholder="Religion" required>
            </div>
             <div> 
                 <label for="">Category</label>
-               <input type="text" id="category" placeholder="Category">
+               <input type="text" id="category" placeholder="Category" required>
             </div>
             <div>
                 <label for="">Nationality</label>
-                <input type="text"  id="nationality" placeholder="Nationality">
+                <input type="text"  id="nationality" placeholder="Nationality" required>
             </div>
             <div> 
                 <label for="">Class</label>
-                <select  id="standard">
+                <select  id="standard" required>
                    <option value="">select</option>
                    <option value="1">1</option>
                    <option value="2">2</option>
@@ -142,7 +121,7 @@
             </div>
            <div>
                 <label for="">Medium</label>
-                <select  id="medium">
+                <select  id="medium" required>
                    <option value="">Select</option>
                    <option value="Hindi">Hindi</option>
                    <option value="English">English</option>
@@ -154,19 +133,19 @@
             <div id="parent">
                 <div>
                     <label for="">Father's Name</label>
-                    <input type="text"  id="fatherName" placeholder="Father's Name">
+                    <input type="text"  id="fatherName" placeholder="Father's Name" required>
                 </div>
                 <div>
                     <label for="">Father's Occupation</label>
-                    <input type="text"  id="fatherOccp" placeholder="Father's Occupation">
+                    <input type="text"  id="fatherOccp" placeholder="Father's Occupation" required>
                 </div>
                 <div>
                     <label for="">Father's Contact</label>
-                    <input type="number"  id="fatherContact" placeholder="Father's Contact">
+                    <input type="number"  id="fatherContact" placeholder="Father's Contact" required>
                 </div>
                 <div>
                     <label for="">Mother's Name</label>
-                    <input type="text"  id="motherName" placeholder="Mother's Name">
+                    <input type="text"  id="motherName" placeholder="Mother's Name" required>
                 </div>
                 <div>
                     <label for="">Mother's Occupation</label>
@@ -174,7 +153,7 @@
                 </div>
                 <div>
                     <label for="">Mother's Contact</label>
-                    <input type="number"  id="motherContact" placeholder="Mother's Contact">
+                    <input type="text"  id="motherContact" placeholder="Mother's Contact">
                 </div>
             </div>
         </div>
@@ -182,24 +161,24 @@
         <div id="previousStandards">
             <div>
                 <label for="">Previous Class</label>
-                <input type="number"  id="lastClass" placeholder="Previous Class">
+                <input type="text"  id="lastClass" placeholder="Previous Class" required>
             </div>
            <div>
                 <label for="">Previous School Name</label>
-                <input type="text"  id="schoolName" placeholder="Previous School Name">
+                <input type="text"  id="schoolName" placeholder="Previous School Name" required>
            </div>
            <div>
                 <label for="">Percentage/Grade</label>
-                <input type="number"  id="percentage" placeholder="Percentage/Grade">  
+                <input type="text"  id="percentage" placeholder="Percentage/Grade" required>  
            </div>
            <div>
                 <label for="">Result(Pass/Fail)</label>
-               <input type="text"  id="resultPrevious" placeholder="Result(Pass/Fail)">
+               <input type="text"  id="resultPrevious" placeholder="Result(Pass/Fail)" required>
            </div>
         </div>
         
         <div>
-            <button id="btn"> <a href="login.html"> Submit</a> </button>
+            <button id="btn">  Submit</button>
         </div>
     </div>
 </body>
