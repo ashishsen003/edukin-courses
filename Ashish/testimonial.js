@@ -19,5 +19,3 @@ setInterval(() =>{
         count=0;
     }
 },2000)
-
-
