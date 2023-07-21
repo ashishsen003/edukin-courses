@@ -87,10 +87,12 @@ let userdata;
         {
             alert("Login successful!");
             loading.style.display = "none"
+            window.location.href="../index.html";
         }
         else{
             alert("Login failed!");
             loading.style.display = "none"
+            window.location.href="./index.html";
         }
     }
     
