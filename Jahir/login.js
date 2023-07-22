@@ -38,11 +38,9 @@ let userdata;
     let email = document.getElementById("email");
     let password = document.getElementById("password");
     let inputCaptchValue= document.querySelector("#captcha-form");
-    let loading = document.getElementById("circleDiv");
 
-    document.querySelector("#login-btn").addEventListener("click",function(e){
+    document.querySelector("#btn").addEventListener("click",function(e){
         e.preventDefault();
-        
         if(email.value && password.value && inputCaptchValue.value)
         {
             if(email.value &&  password.value && password.value.length>=8)
@@ -50,21 +48,15 @@ let userdata;
 
                 if(inputCaptchValue.value === captchaValue)
                 {
-                    loading.style.display = "flex"
-                    loading.style.flexDirection="column";
                     getData(email.value,password.value)
-                    // loading.style.display="none";
                 }
                 else{
                   alert("Invalid Captcha");
                   Refresh_Captcha()
-                  inputCaptchValue.value="";
-                  loading.style.display = "none";
+
                 }
-            }else{
-               alert("Email or Password Incorrect")
-               loading.style.display = "none"
-            } 
+            }
+
         } 
     })
 
@@ -86,13 +78,10 @@ let userdata;
         if(res.length)
         {
             alert("Login successful!");
-            loading.style.display = "none"
-            window.location.href="../index.html";
+            window.location.href="../index.html"
         }
         else{
-            alert("Login failed!");
-            loading.style.display = "none"
-            window.location.href="./index.html";
+            alert("Login failed!...email or password Incorrect");
         }
     }
     
