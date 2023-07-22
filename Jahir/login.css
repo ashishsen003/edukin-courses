@@ -17,8 +17,6 @@ body {
 #login>div:nth-child(2) {
     margin-bottom: 10px;
 }
-
-
 form {
     display: flex;
     flex-direction: column;
@@ -155,7 +153,5 @@ img {
     #logo>img {
         width: 150px;
         height: 50px;
-      
-    
     }
 }
