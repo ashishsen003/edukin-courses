@@ -77,6 +77,21 @@
       "prev_percentage": "NA",
       "prev_result": "NA",
       "id": "4VWFLyM"
+    },
+    {
+      "name": "Ashish",
+      "parents": "xyz",
+      "age": "25",
+      "gender": "male",
+      "email": "ashish123@gmail.com",
+      "password": "123789123456",
+      "caste": "OPEN",
+      "state": "Delhi",
+      "grade": "kindergarten",
+      "medium": "English",
+      "contact": "555665534896",
+      "address": " Delhi India",
+      "id": "irLqM6h"
     }
   ],
   "courses": [
