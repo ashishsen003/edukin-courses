@@ -1,0 +1,284 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body {
+  
+    margin: 0;
+}
+
+/* navbar */
+
+.nav {
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+ margin-bottom: 0%;
+    padding: 0.7%;
+   
+    border-bottom: white solid 1.5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: solid orange 1px; */
+    
+}
+
+.nav>div:nth-child(1) {
+    width: 15%;
+    padding-left: 10px;
+}
+
+.nav>div:nth-child(1) a {
+    color: black;
+    color: orange;
+    color: greenyellow;
+   
+    text-decoration: none;
+}
+
+.nav>div:nth-child(1) h1 {
+    font-size: 230%;
+    margin: auto;
+    font-family: 'Bruno Ace SC', cursive;
+    cursor: pointer;
+}
+
+.nav>div:nth-child(2) {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.nav>div:nth-child(2)>a {
+    color: black;
+    color: orange;
+    letter-spacing: 1px;
+
+    text-decoration: none;
+    font-size: large;
+}
+
+.nav>div:nth-child(2)>a:hover {
+    color: orangered;
+
+}
+
+.nav button {
+    border-radius: 10px;
+    width: 120px;
+    height: 55px;
+    border: none;
+    color: teal;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    background-color: hsl(84, 76%, 66%);
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.nav button:hover {
+
+    color: orange;
+    border: solid 0.5px;
+
+}
+
+/* footer */
+
+.footer {
+
+    background-color: #fffaf5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer>div:nth-child(1) {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+
+    justify-content: space-around;
+}
+
+.footer>div:nth-child(1)>div {
+    width: 100%;
+}
+
+#line2 {
+    width: 2px;
+    background-color: rgb(28, 28, 28);
+    margin-left: 70px;
+    margin-right: 70px;
+    transform: rotate(10deg);
+}
+
+.footer>div:nth-child(1)>div:nth-child(3)>div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px;
+    border-color: lightgray;
+}
+
+.footer>div:nth-child(2) {
+    display: flex;
+    width: 90%;
+    gap: 20px;
+    margin: auto;
+    border-top: solid 1px;
+    border-color: lightgray;
+    justify-content: space-between;
+}
+
+
+/* body */
+
+#details {
+    display: flex;
+}
+
+#info {
+    width: 100%;
+  
+}
+
+#heading{
+   
+   border:  rgb(235,66,126) solid;
+    background-color: rgb(235,66,126) ;
+    padding-left: 10%;
+    margin: 0;
+}
+#main-heading{
+    font-size: xxx-large;
+    color: white;
+}
+#description{
+    width: 55%;
+    font-size: x-large;
+    color: white;
+}
+
+
+
+#purchase-div {
+    right: 0;
+    position: fixed;
+   
+}
+
+#batch-details{
+    padding-left: 10%;
+    margin-top: 4%;
+}
+
+
+#syllabus p{
+   padding-left: 4%;
+}
+
+#course-data{
+    padding-left: 10%;
+margin-top: 4%;
+}
+#course-data h2{
+   
+}
+
+#data{
+    display: flex;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+.data-info{
+    text-align: center;
+    border-right: grey solid 1px; 
+    font-size: x-large;
+    padding: 1%;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+.data-ponits{
+    margin: 0;
+}
+.data-name{
+    margin: 0;
+    color: gray;
+}
+
+#faq-main {
+padding-left: 10%;
+margin-top: 5%;
+margin-bottom: 5%;
+}
+
+/* payment */
+#img{
+ border-radius: 10px;
+    width: 100%;
+   
+}
+
+#purchase-div{
+   margin-top: 8%;
+    width: 20%;
+    text-align: center;
+    margin-right: 2%;
+    padding: 1%;
+    background-color: white;
+    border-radius:10px ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#purchase-div p{
+    margin: 0;
+    margin-top: 3%;
+ margin-bottom: 5%;
+ font-weight: 600;
+}
+#purchase-data{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+margin-top: 3%;
+margin-bottom: 3%;
+justify-content: space-between;
+justify-content: center;
+}
+#price{
+    margin: 0%;
+    color: teal;
+  
+}
+#mrp{
+    margin: 0%;
+    color: gray;
+    text-decoration: line-through;
+}
+#discount{
+    margin: 0;
+    border: solid green;
+    background-color: green;
+    color: white;
+    padding: 1%;
+    border-radius: 20%
+}
+
+#buynow{
+    background-color: rgb(90,75,218);
+    color: white;
+    padding: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    width: 100%;
+    margin-top: 5%;
+}
+
+#buynow:hover{
+    background-color: rgb(56, 40, 200);
+}

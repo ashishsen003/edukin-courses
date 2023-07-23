@@ -107,10 +107,15 @@ function display(data) {
          let explorebtn=document.createElement("button")
          explorebtn.setAttribute("id","explorebtn")
          explorebtn.innerText="Explore"
-
+        
+         explorebtn.addEventListener("click",function(){
+            localStorage.setItem("id",JSON.stringify(e.id))
+            window.location.href ="../Amol/course-details.html"
+         })
          price_bar.append(price_div,explorebtn)
          course_info.append(course_name,course_data,price_bar)
          card.append(course_image,course_info)
          mainsection.append(card)
     });
 }
+
