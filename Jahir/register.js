@@ -69,7 +69,9 @@ function display(data)
 {
     if(data.length==0)
     {
-        alert("Invalid email Address")
+        alert("Invalid email Address");
+        submitBTN.style.display="block"
+        updateBTN.style.display="none"
     }
     else{
         name.value=data[0].name;
@@ -133,6 +135,6 @@ function newStudentAdd(obj)
     }).then(data=>{
         console.log(data)
     }).catch(err=>{
-        console.log(err)
+        console.log(err);
     })
 }
