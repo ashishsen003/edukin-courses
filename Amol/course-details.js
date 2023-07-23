@@ -90,8 +90,22 @@ function display(data) {
 }
 
 
-let buynow=document.getElementById("buynow")
+let buynow = document.getElementById("buynow")
+let log_api = "http://localhost:3000/aferLogin"
 
-buynow.addEventListener("click",function(){
-    window.location.href ="../Amol/payment.html" 
+async function loginstatus() {
+    try {
+        let res = await fetch(log_api)
+        let data=await res.json()
+        console.log(data)
+    }
+    catch (err) {
+        console.log(err)
+    }
+}
+
+buynow.addEventListener("click", function () {
+
+localStorage.setItem("paymentid",JSON.stringify(id))
+    window.location.href = "../Amol/payment.html"
 })
