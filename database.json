@@ -18,11 +18,6 @@
   },
   "users": [
     {
-      "email": "jp",
-      "password": "jp12345678",
-      "id": "1"
-    },
-    {
       "name": "Jahir",
       "email": "jahirpp1999@gmail.com",
       "password": "123456789",
@@ -48,7 +43,7 @@
       "prev_school_name": "SITCOE",
       "prev_percentage": "82%",
       "prev_result": "PASS",
-      "id": "TGKHyIo"
+      "id": "2"
     },
     {
       "name": "Mahesh",
@@ -76,7 +71,7 @@
       "prev_school_name": "NA",
       "prev_percentage": "NA",
       "prev_result": "NA",
-      "id": "4VWFLyM"
+      "id": "3"
     },
     {
       "name": "Ashish",
@@ -91,22 +86,7 @@
       "medium": "English",
       "contact": "555665534896",
       "address": " Delhi India",
-      "id": "irLqM6h"
-    },
-    {
-      "name": "",
-      "parents": "",
-      "age": "",
-      "gender": "",
-      "email": "jahirpp1999@gmail.com",
-      "password": "Mp$xg3txfpBUYK",
-      "caste": "",
-      "state": "",
-      "grade": "",
-      "medium": "",
-      "contact": "",
-      "address": " ",
-      "id": "AIH-CsQ"
+      "id": "4"
     }
   ],
   "courses": [
@@ -220,5 +200,6 @@
       "originalPrice": "₹2800",
       "discountPercentage": "14% OFF"
     }
-  ]
+  ],
+  "afterLogin":[]
 }
