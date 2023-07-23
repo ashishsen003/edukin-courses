@@ -110,6 +110,7 @@ function display(data) {
         
          explorebtn.addEventListener("click",function(){
             localStorage.setItem("id",JSON.stringify(e.id))
+            console.log(e.id)
             window.location.href ="../Amol/course-details.html"
          })
          price_bar.append(price_div,explorebtn)
