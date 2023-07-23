@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    body{
+        background-image: url(https://img.freepik.com/free-vector/cute-rainbow-frame-vector-beige-background-cute-hand-drawn-style_53876-126112.jpg?w=996&t=st=1690054827~exp=1690055427~hmac=c3c2c1c96335285decada3b649f00f30eb8c95eacabe8e69255cc58d6921db5e);
+    }
+    
+    .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    
+    .nav > div:nth-child(1) {
+    width: 15%;
+    padding-left: 10px;
+    }
+    
+    .nav > div:nth-child(1) a{
+    color: black;
+    text-decoration: none;
+    }
+    
+    .nav > div:nth-child(1)  h1 {
+    font-size: 230%;
+    margin: auto;
+    font-family: 'Bruno Ace SC', cursive;
+    cursor: pointer;
+    }
+    
+    .nav > div:nth-child(2) {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    }
+    
+    .nav > div:nth-child(2) > a {
+    color: black;
+    text-decoration: none;
+    }
+    
+    .nav > div:nth-child(2) > a:hover {
+    color: red;
+    font-weight: bold;
+    }
+    
+    .nav  button {
+    width: 120px;
+    height: 65px;
+    border: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    font-size: 18px;
+    cursor: pointer;
+    }
+    
+    .nav  button:hover {
+    background-color: white;
+    color: black;
+    border: solid 0.5px;
+    }
+    .course-section{
+        margin-top: 50px;
+    }
+    #message{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+        /* border: 1px solid red; */
+    }
+    
+    #container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    }
+    .card{
+        border-radius: 15px;
+        background-color: white;
+        padding-bottom: 30px;
+        /* border: 1px dashed red; */
+    }
+    .card-details{
+        padding: 20px;
+        /* border: 1px dashed red; */
+    }
+    .card-details > h3, .card-details > h5{
+        margin-top: 10px;
+    }
+    .card-details > h5{
+        color: rgb(85, 85, 85);
+    }
+    
+    .btn{
+        /* width:100px; */
+        margin-top: 20px;
+        /* height: 40px; */
+        color: white;
+        padding: 10px;
+        font-size: medium;
+        background-color:rgb(245, 39, 35);
+        border: 0;
+        border-radius: 10px;
+        position: relative;
+        right: -230px;
+    }
+    .img-card > img{
+    width:100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    }
+    
+    .footer {
+    background-color: #fffaf5;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+    
+    .footer > div:nth-child(1) {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    
+    justify-content: space-around;
+    }
+    
+    .footer > div:nth-child(1) > div {
+    width: 100%;
+    }
+    
+    #line2 {
+    width: 2px;
+    background-color: rgb(28, 28, 28);
+    margin-left: 70px;
+    margin-right: 70px;
+    transform: rotate(10deg);
+    }
+    
+    .footer > div:nth-child(1) > div:nth-child(3) > div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px;
+    border-color: lightgray;
+    }
+    
+    .footer > div:nth-child(2) {
+    display: flex;
+    width: 90%;
+    gap: 20px;
+    margin: auto;
+    border-top: solid 1px;
+    border-color: lightgray;
+    justify-content: space-between;
+    }
+    
+    /*------> footer <------*/
