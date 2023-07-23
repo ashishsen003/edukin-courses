@@ -7,7 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Payment Details</h1>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="cardname">CardHolder Name</label>
+                <input type="text" id="cardname" required>
+              </div>
+          <div class="form-group">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" maxlength="16" required>
+          </div>
+          <div class="form-group">
+            <label for="expiryDate">Expiry Date</label>
+            <input type="text" id="expiryDate" maxlength="5" placeholder="MM/YY" required>
+          </div>    
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" maxlength="3" required>
+          </div>
+          <button type="submit">Pay Now</button>
+        </form>
+      </div>
 </body>
 </html>
 <script src="./payment.js"></script>
