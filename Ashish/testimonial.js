@@ -5,7 +5,9 @@ let arr = [ "https://healthpolicy.usc.edu/wp-content/uploads/2021/04/iStock-1865
             "https://www.chickyolive.com/wp-content/uploads/2020/12/Helping-your-Child-Adjust-to-School-Life.jpg"
         ]
 
+
 let main = document.querySelector("#slide-div")
+
 let count = 0
 
 setInterval(() =>{
@@ -18,4 +20,5 @@ setInterval(() =>{
     if(count == arr.length){
         count=0;
     }
+
 },2000)
