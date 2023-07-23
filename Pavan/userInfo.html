@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Page</title>
+    <!-- body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- nav bar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="userHome.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div>
+        <a href="userhome.html"><h1>Edukin</h1></a>
+      </div>
+
+      <div>
+        <a href="userhome.html">Home</a>
+        <a href="#">Programs</a>
+        <a href="courses.html">Courses</a>
+        <a href="#">Admissions</a>
+        <a href="#">Testimonial</a>
+      </div>
+      <a href="index.html" id="logout">Log out</a>
+      <a href="#"><button id="register"></button></a>
+    </div>
+
+    <div id="user">
+      <div>
+        <div>
+          <h2>User Profile</h2>
+        </div>
+
+        <div>
+          <img
+            src="https://media.istockphoto.com/id/1131164548/vector/avatar-5.jpg?s=612x612&w=0&k=20&c=CK49ShLJwDxE4kiroCR42kimTuuhvuo2FH5y_6aSgEo="
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div id="username">
+        <h2>Name :</h2>
+      </div>
+
+      <div id="email">
+        <h4>Register E-mail :</h4>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let username = document.querySelector("#username");
+  let email = document.querySelector("#email");
+  let users = JSON.parse(localStorage.getItem("user"));
+  let name = JSON.parse(localStorage.getItem("name"));
+
+  let register = document.querySelector("#register");
+
+  let small = name.trim().split(" ");
+
+  if (small.lenght > 2) {
+    register.innerText = small[0] + " " + small[1];
+  } else {
+    console.log("ok");
+    register.innerText = small[0].trim();
+  }
+
+  console.log(small);
+  console.log(users);
+
+  display(users);
+
+  function display(users) {
+    users.map((el) => {
+      let proname = document.createElement("h2");
+      let mail = document.createElement("h4");
+      let course = document.createElement("p");
+
+      console.log(el.name.trim() == name.trim(), name, el.name);
+
+      if (name == el.name.trim()) {
+        let a = "User Name : " + " " + el.name;
+
+        proname.innerText = el.name;
+        mail.innerText = el.email;
+        // course.innerText= el.course;
+
+        console.log(proname, mail);
+        username.append(proname);
+        email.append(mail);
+        return;
+      }
+    });
+
+    // "User Name : " + " " + el.name;
+  }
+</script>
