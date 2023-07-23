@@ -87,6 +87,36 @@
       "contact": "555665534896",
       "address": " Delhi India",
       "id": "4"
+    },
+    {
+      "name": "amol patil",
+      "parents": "k",
+      "age": "26",
+      "gender": "male",
+      "email": "amolkpatil22@gmail.com",
+      "password": "123456789",
+      "caste": "sda",
+      "state": "Madhya Pradesh",
+      "grade": "kindergarten",
+      "medium": "Hindi",
+      "contact": "7845125445",
+      "address": "atopkdkjf",
+      "id": "Qs8K3pk"
+    },
+    {
+      "name": "amol",
+      "parents": "k",
+      "age": "24",
+      "gender": "male",
+      "email": "amolkpatil22@gmail.com",
+      "password": "123456789",
+      "caste": "sda",
+      "state": "Himachal Pradesh",
+      "grade": "prek",
+      "medium": "Hindi",
+      "contact": "7845125445",
+      "address": " asdf",
+      "id": "VQrmAyT"
     }
   ],
   "courses": [

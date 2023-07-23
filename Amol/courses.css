@@ -297,3 +297,10 @@ font-weight: 600;
   border-color: lightgray;
   justify-content: space-between;
 }
+
+#logout{
+  display: none;
+  background-color: transparent;
+color: orange;
+font-weight: bold;
+}
