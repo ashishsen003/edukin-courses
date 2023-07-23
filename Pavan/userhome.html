@@ -36,7 +36,7 @@
         <a href="#">Admissions</a>
         <a href="#">Testimonial</a>
       </div>
-      <a href="index.html" id="logout">Log out</a>
+      <a href="../index.html" id="logout">Log out</a>
       <a href="user.html"><button id="register"></button></a>
     </div>
 
@@ -305,15 +305,49 @@
 </html>
 
 <script>
-  let name = JSON.parse(localStorage.getItem("name"));
 
   let register = document.querySelector("#register");
+  let logout = document.getElementById("logout");
+  var id;
+  fetch(`http://localhost:3000/afterLogin`)
+    .then(res=>{
+    return res.json();
+    }).then(data=>{
+      displayName(data[0]);
+      // console.log(data);
+    }).catch(err=>{
+    console.log(err);
+  })
+  function displayName(data)
+  {
+    if(data != null)
+    {
+      let name = data.name;
+      name = name.split(" ");
+      id = data.id;
+      console.log(id)
+      console.log(name[0])
+      register.innerText = name[0];
+    }else{
+      register.innerText="Register";
+    }
+  }
 
-  let use = name.split(" ");
+  logout.addEventListener("click",function(e){
+    e.preventDefault();
+    fetch(`http://localhost:3000/afterLogin/${id}`,{
+      method:"DELETE"
+    })
+    .then(res=>{
+    return res.json();
+    }).then(data=>{
+      // console.log(data);
+      displayName(null)
+    }).catch(err=>{
+    console.log(err);
+    })
+    console.log(id)
+  })
 
-  let user = use[0].trim();
 
-  console.log(user);
-
-  register.innerText = user;
 </script>

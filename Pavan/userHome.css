@@ -111,6 +111,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+#register{
+  font-size: 25px;
+}
 
 /*------> nav bar <------*/
 

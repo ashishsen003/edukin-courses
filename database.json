@@ -201,5 +201,31 @@
       "discountPercentage": "14% OFF"
     }
   ],
-  "afterLogin":[]
+  "afterLogin": [],
+  "admin": [
+    {
+      "name": "jahir",
+      "email": "jahirpp1999@gmail.com",
+      "password": "123456789",
+      "id": "1"
+    },
+    {
+      "name": "pavan",
+      "email": "pavan123@gmail.com",
+      "password": "123456789",
+      "id": "2"
+    },
+    {
+      "name": "amol",
+      "email": "amol123@gmail.com",
+      "password": "123456789",
+      "id": "3"
+    },
+    {
+      "name": "ashish",
+      "email": "pavan123@gmail.com",
+      "password": "123456789",
+      "id": "4"
+    }
+  ]
 }

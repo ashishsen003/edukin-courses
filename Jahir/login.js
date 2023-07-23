@@ -78,10 +78,35 @@ let userdata;
         if(res.length)
         {
             alert("Login successful!");
-            window.location.href="../index.html"
+            callAfterLogin(res[0]);
+            window.location.href="../Pavan/userhome.html"
         }
         else{
             alert("Login failed!...email or password Incorrect");
         }
     }
     
+    function callAfterLogin(data)
+    {
+        let obj={
+            email:data.email,
+            name:data.name,
+            login_Check:true,
+            password:data.password
+        }
+        
+        fetch(`http://localhost:3000/afterLogin`,{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json",
+            },
+            body:JSON.stringify(obj),
+        })
+        .then(res=>{
+            return res.json();
+        }).then(data=>{
+            console.log(data);
+        }).catch(err=>{
+            console.log(err);
+        })
+    }
