@@ -62,7 +62,6 @@ search.addEventListener("click",function(e){
     }).catch(err=>{
         console.log(err)
     })
-    
 })
 
 function display(data)
