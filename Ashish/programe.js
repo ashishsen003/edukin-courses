@@ -16,7 +16,7 @@ let arr = [
     }
 ]
 
-// fetchdata(`http://localhost:3000/courses_purchased`)
+// fetchdata(`https://mock-api-og1t.onrender.com/courses_purchased`)
 async function fetchdata(url){
     try{
         let res = await fetch(url)
@@ -122,7 +122,7 @@ function viewlessfunc(e,id){
 let register = document.querySelector("#register");
   let logout = document.getElementById("logout");
   var id;
-  fetch(`http://localhost:3000/afterLogin`)
+  fetch(`https://mock-api-og1t.onrender.com/afterLogin`)
     .then(res=>{
     return res.json();
     }).then(data=>{
@@ -152,7 +152,7 @@ let register = document.querySelector("#register");
 
   logout.addEventListener("click",function(e){
     e.preventDefault();
-    fetch(`http://localhost:3000/afterLogin/${id}`,{
+    fetch(`https://mock-api-og1t.onrender.com/afterLogin/${id}`,{
       method:"DELETE"
     })
     .then(res=>{

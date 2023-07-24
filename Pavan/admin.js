@@ -1,7 +1,7 @@
 
-let courseUrl = "http://localhost:3000/courses"
-let userUrl = "http://localhost:3000/users";
-let adminUrl = "http://localhost:3000/admin"
+let courseUrl = "https://mock-api-og1t.onrender.com/courses"
+let userUrl = "https://mock-api-og1t.onrender.com/users";
+let adminUrl = "https://mock-api-og1t.onrender.com/admin"
 
 var main = document.querySelector("#content")
 var main = document.querySelector("#content")
@@ -294,7 +294,7 @@ viewCourses.addEventListener("click", (event)=>{
 let register = document.querySelector("#register");
 // let logout = document.getElementById("logout");
 var id;
-fetch(`http://localhost:3000/afterLogin`)
+fetch(`https://mock-api-og1t.onrender.com/afterLogin`)
   .then((res) => {
     return res.json();
   })
@@ -322,7 +322,7 @@ function displayName(data) {
 
 logout.addEventListener("click", function (e) {
   e.preventDefault();
-  fetch(`http://localhost:3000/afterLogin/${id}`, {
+  fetch(`https://mock-api-og1t.onrender.com/afterLogin/${id}`, {
     method: "DELETE",
   })
     .then((res) => {
