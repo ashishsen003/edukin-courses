@@ -91,11 +91,6 @@ function display(data) {
 
 
 
-buynow.addEventListener("click", function () {
-
-    localStorage.setItem("paymentid", JSON.stringify(id))
-    window.location.href = "../Amol/payment.html"
-})
 
 
 let register = document.getElementById("register");
@@ -141,4 +136,29 @@ logout.addEventListener("click", function (e) {
         }).catch(err => {
             console.log(err);
         })
+})
+
+
+
+
+buynow.addEventListener("click", function () {
+
+    fetch("http://localhost:3000/afterLogin/")
+    .then(res => {
+        return res.json();
+    }).then(data => {
+       if(data[0]!==undefined){
+        localStorage.setItem("paymentid", JSON.stringify(id))
+        window.location.href = "../Amol/payment.html"
+
+       }
+else{
+    alert("Please Login First to purchase courses")
+}
+
+    }).catch(err => {
+        console.log(err);
+    })
+
+   
 })
