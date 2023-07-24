@@ -90,8 +90,55 @@ function display(data) {
 }
 
 
-let buynow=document.getElementById("buynow")
 
-buynow.addEventListener("click",function(){
-    window.location.href ="../Amol/payment.html" 
+buynow.addEventListener("click", function () {
+
+    localStorage.setItem("paymentid", JSON.stringify(id))
+    window.location.href = "../Amol/payment.html"
+})
+
+
+let register = document.getElementById("register");
+let logout = document.getElementById("logout");
+
+
+fetch("http://localhost:3000/afterLogin/")
+    .then(res => {
+        return res.json();
+    }).then(data => {
+        displayName(data[0]);
+
+    }).catch(err => {
+        console.log(err);
+    })
+
+let id1;
+function displayName(data) {
+    if (data != null) {
+        let name = data.name;
+        name = name.split(" ");
+        id1 = data.id;
+        register.innerText = name[0];
+        logout.style.display = "block"
+
+    }
+    else {
+        register.innerText = "Login"
+        logout.style.display = "none"
+    }
+}
+
+logout.addEventListener("click", function (e) {
+    e.preventDefault();
+    fetch(`http://localhost:3000/afterLogin/${id1}`, {
+        method: "DELETE"
+    })
+        .then(res => {
+            return res.json();
+        }).then(data => {
+            // console.log(data);
+            displayName(null)
+        }).catch(err => {
+            console.log(err);
+        })
 })
