@@ -195,6 +195,7 @@ textarea{
   justify-content: flex-end;
   gap: 20px;
   margin-right: 50px;
+  display: none;
 }
 #updateBTN{
   display: none;
