@@ -76,15 +76,15 @@
 
   let small = name.trim().split(" ");
 
-  if (small.lenght > 2) {
+  if (small.length > 2) {
     register.innerText = small[0] + " " + small[1];
   } else {
     console.log("ok");
     register.innerText = small[0].trim();
   }
 
-  console.log(small);
-  console.log(users);
+  // console.log(small);
+  // console.log(users);
 
   display(users);
 
@@ -116,7 +116,7 @@
   }
 
 
-  let register = document.getElementById("register");
+//  register = document.getElementById("register");
 let logout = document.getElementById("logout");
 
 
