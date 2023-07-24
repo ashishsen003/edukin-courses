@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
+   
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -10,9 +10,11 @@ body {
   }
   
   .container {
+    margin-left: 35%;
+    margin-top: 3%;
     background-color: #fff;
     border-radius: 8px;
-    padding: 30px;
+    padding: 3%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
@@ -32,10 +34,11 @@ body {
   }
   
   input {
+
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
   }
   
   button {
@@ -58,3 +61,93 @@ body {
     cursor: not-allowed;
   }
   
+
+
+  * {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body {
+  
+    margin: 0;
+}
+
+/* navbar */
+
+.nav {
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+ margin-bottom: 0%;
+    padding: 0.7%;
+   
+    border-bottom: white solid 1.5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: solid orange 1px; */
+    
+}
+
+.nav>div:nth-child(1) {
+    width: 15%;
+    padding-left: 10px;
+}
+
+.nav>div:nth-child(1) a {
+    color: black;
+    color: orange;
+    color: greenyellow;
+   
+    text-decoration: none;
+}
+
+.nav>div:nth-child(1) h1 {
+    font-size: 230%;
+    margin: auto;
+    font-family: 'Bruno Ace SC', cursive;
+    cursor: pointer;
+}
+
+.nav>div:nth-child(2) {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.nav>div:nth-child(2)>a {
+    color: black;
+    color: orange;
+    letter-spacing: 1px;
+
+    text-decoration: none;
+    font-size: large;
+}
+
+.nav>div:nth-child(2)>a:hover {
+    color: orangered;
+
+}
+
+.nav button {
+    border-radius: 10px;
+    width: 120px;
+    height: 55px;
+    border: none;
+    color: teal;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    background-color: hsl(84, 76%, 66%);
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.nav button:hover {
+
+    color: orange;
+    border: solid 0.5px;
+
+}

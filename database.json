@@ -18,67 +18,6 @@
   },
   "users": [
     {
-      "email": "jp",
-      "password": "jp12345678",
-      "id": "1"
-    },
-    {
-      "name": "Jahir",
-      "email": "jahirpp1999@gmail.com",
-      "password": "123456789",
-      "gender": "Male",
-      "DOB": "2023-07-12",
-      "Aadhar_number": "111111111",
-      "city": "Kolhapur",
-      "address": "A/P Bhendawade",
-      "state": "Maharashtra",
-      "pin_code": "416112",
-      "religion": "Muslim",
-      "category": "OBC",
-      "nationality": "Indian",
-      "standard": "2",
-      "medium": "English",
-      "father_name": "Salim",
-      "father_occupation": "Farmer",
-      "father_contact": "9823220089",
-      "mother_name": "Chnadbi",
-      "mother_occupation": "House Wife",
-      "mother_contact": "NA",
-      "previous_class": "1",
-      "prev_school_name": "SITCOE",
-      "prev_percentage": "82%",
-      "prev_result": "PASS",
-      "id": "TGKHyIo"
-    },
-    {
-      "name": "Mahesh",
-      "email": "mahes122@gmail.com",
-      "password": "M1233",
-      "gender": "Male",
-      "DOB": "2023-06-28",
-      "Aadhar_number": "1111111",
-      "city": "himalaya",
-      "address": "A/P Dhakha",
-      "state": "Himachal Pradesh",
-      "pin_code": "21333",
-      "religion": "Sindhu",
-      "category": "OPEN",
-      "nationality": "Indian",
-      "standard": "1",
-      "medium": "English",
-      "father_name": "Kuldeep",
-      "father_occupation": "Farmer",
-      "father_contact": "1234579333",
-      "mother_name": "Kaveri",
-      "mother_occupation": "HouseWife",
-      "mother_contact": "NA",
-      "previous_class": "NA",
-      "prev_school_name": "NA",
-      "prev_percentage": "NA",
-      "prev_result": "NA",
-      "id": "4VWFLyM"
-    },
-    {
       "name": "Ashish",
       "parents": "xyz",
       "age": "25",
@@ -91,7 +30,82 @@
       "medium": "English",
       "contact": "555665534896",
       "address": " Delhi India",
-      "id": "irLqM6h"
+      "id": "4"
+    },
+    {
+      "name": "Jahir Salim Pendhari",
+      "parents": "Salim Pendhari",
+      "age": "25",
+      "gender": "male",
+      "email": "jahirpp1@gmail.com",
+      "password": "123456789",
+      "caste": "OBC",
+      "state": "Maharashtra",
+      "grade": "first",
+      "medium": "Hindi",
+      "contact": "9823220089",
+      "address": " bbj",
+      "id": "jHGUIQk"
+    },
+    {
+      "name": "Kamlesh",
+      "parents": "kadam",
+      "age": "50",
+      "gender": "male",
+      "email": "kamlesh@gmail.com",
+      "password": "Mp$xg3txfpBUYK",
+      "caste": "OPEN",
+      "state": "Andaman And Nicobar",
+      "grade": "prek",
+      "medium": "Hindi",
+      "contact": "7894561230",
+      "address": " bhb",
+      "id": "HEaC2iZ"
+    },
+    {
+      "name": "Jahir",
+      "parents": "Salim Pendhari",
+      "age": "25",
+      "gender": "male",
+      "email": "jahirpp1999@gmail.com",
+      "password": "Mp$xg3txfpBUYK",
+      "caste": "OBC",
+      "state": "Andaman And Nicobar",
+      "grade": "kindergarten",
+      "medium": "Hindi",
+      "contact": "9823220089",
+      "address": " kk",
+      "id": "LwS2GNO"
+    },
+    {
+      "name": "Jahir Pendhari",
+      "parents": "Salim Pendhari",
+      "age": "25",
+      "gender": "male",
+      "email": "jahirpp@gmail.com",
+      "password": "11111111",
+      "caste": "OBC",
+      "state": "Maharashtra",
+      "grade": "kindergarten",
+      "medium": "English",
+      "contact": "9823220089",
+      "address": " kela",
+      "id": "b_uTVQD"
+    },
+    {
+      "name": "amol patil",
+      "parents": "ads",
+      "age": "57",
+      "gender": "male",
+      "email": "amolkpatil22@gmail.com",
+      "password": "123456789",
+      "caste": "sda",
+      "state": "Delhi",
+      "grade": "prek",
+      "medium": "Hindi",
+      "contact": "7845125445",
+      "address": " 54df",
+      "id": "n3XnTS7"
     }
   ],
   "courses": [
@@ -474,6 +488,87 @@
       "faq4ans": "This course is recommended for children between the ages of 6 and 10 years.",
       "faq5": "Will the kids have the opportunity to interact with other children?",
       "faq5ans": "While the live lectures will be conducted for all participants, the course fosters a playful environment for children to interact with their peers during activities and playtime."
+    }
+  ],
+  "afterLogin": [
+    {
+      "email": "amolkpatil22@gmail.com",
+      "name": "amol patil",
+      "login_Check": true,
+      "password": "123456789",
+      "id": 1
+    }
+  ],
+  "admin": [
+    {
+      "name": "jahir",
+      "email": "jahirpp1999@gmail.com",
+      "password": "123456789",
+      "id": "1"
+    },
+    {
+      "name": "pavan",
+      "email": "pavan123@gmail.com",
+      "password": "123456789",
+      "id": "2"
+    },
+    {
+      "name": "amol",
+      "email": "amol123@gmail.com",
+      "password": "123456789",
+      "id": "3"
+    },
+    {
+      "name": "ashish",
+      "email": "pavan123@gmail.com",
+      "password": "123456789",
+      "id": "4"
+    }
+  ],
+  "courses_purchased": [
+    {
+      "obj": {
+        "id": "1",
+        "courseName": "Mastering English: From Beginner to Fluent",
+        "image": "https://img.freepik.com/free-photo/education-study-childhood-skill-word_53876-121550.jpg?w=996&t=st=1690112687~exp=1690113287~hmac=5896e3bb1cee8e6e7d2d90baa29ec3eede1538a0381682515d69214d4d76a2dd",
+        "description": "This course is designed for individuals who are starting their journey in learning English and want to become fluent in the language. The course covers all aspects of English, including grammar, vocabulary, speaking, listening, reading, and writing.",
+        "courseDuration": "6 months",
+        "batchStartDate": "1st August 2023",
+        "batchEndDate": "31st January 2024",
+        "liveLectures": "300+",
+        "weeklyTests": "50+",
+        "practiceHours": "1500+ Hrs",
+        "mockTests": "100+",
+        "discountedPrice": "₹3600",
+        "originalPrice": "₹4200",
+        "discountPercentage": "14% OFF",
+        "syllabus": [
+          "Introduction to English language and communication",
+          "Basic grammar rules and sentence structure",
+          "Vocabulary building and word usage",
+          "Speaking and pronunciation practice",
+          "Listening comprehension exercises",
+          "Reading comprehension and analysis",
+          "Writing skills and essay writing",
+          "Interactive group discussions and debates",
+          "Practical exercises and real-life scenarios",
+          "Final fluency assessment"
+        ],
+        "faq1": "Is this course suitable for complete beginners in English?",
+        "faq1ans": "Yes, absolutely! This course is specifically designed for beginners who have little to no prior knowledge of the English language.",
+        "faq2": "What are the payment options available for this course?",
+        "faq2ans": "We accept payments through various methods, including credit/debit cards, net banking, and mobile wallets.",
+        "faq3": "Are there any prerequisites for enrolling in this course?",
+        "faq3ans": "No, there are no prerequisites for this course. It is open to all individuals who are interested in learning English.",
+        "faq4": "Is there a certification provided upon completion of the course?",
+        "faq4ans": "Yes, upon successful completion of the course and all assessments, you will receive a course completion certificate.",
+        "faq5": "Can I access the course materials and lectures after the course ends?",
+        "faq5ans": "Yes, you will have access to the course materials and lectures for a specified period even after the course completion date."
+      },
+      "id": 1
+    },
+    {
+      "id": 2
     }
   ]
 }

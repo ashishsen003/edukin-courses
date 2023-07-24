@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="payment.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="payment.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet" />
+
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Payment Details</h1>
-        <form id="paymentForm">
-            <div class="form-group">
-                <label for="cardname">CardHolder Name</label>
-                <input type="text" id="cardname" required>
-              </div>
-          <div class="form-group">
-            <label for="cardNumber">Card Number</label>
-            <input type="text" id="cardNumber" maxlength="16" required>
-          </div>
-          <div class="form-group">
-            <label for="expiryDate">Expiry Date</label>
-            <input type="text" id="expiryDate" maxlength="5" placeholder="MM/YY" required>
-          </div>    
-          <div class="form-group">
-            <label for="cvv">CVV</label>
-            <input type="password" id="cvv" maxlength="3" required>
-          </div>
-          <button type="submit">Pay Now</button>
-        </form>
+  <div class="nav">
+    <div>
+      <a href="./index.html">
+        <h1>Edukin</h1>
+      </a>
+    </div>
+
+    <div>
+      <a href="../index.html">Home</a>
+      <a href="#">Programs</a>
+      <a href="../Amol/courses.html" id="course">Courses</a>
+      <a href="../Jahir/register.html">Admissions</a>
+      <a href="../Ashish/testimonial.html">Testimonial</a>
+    </div>
+    <button id="logout">Log out</button>
+    <a href="../Jahir/login.html"><button id="register">Login</button></a>
+  </div>
+
+  <div class="container">
+    <h1>Payment Details</h1>
+    <form id="paymentForm">
+      <div class="form-group">
+        <label for="cardname">CardHolder Name</label>
+        <input type="text" id="cardname" required>
       </div>
+      <div class="form-group">
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" maxlength="16" required>
+      </div>
+      <div class="form-group">
+        <label for="expiryDate">Expiry Date</label>
+        <input type="text" id="expiryDate" maxlength="5" placeholder="MM/YY" required>
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV</label>
+        <input type="password" id="cvv" maxlength="3" required>
+      </div>
+      <button type="submit">Pay Now</button>
+    </form>
+  </div>
 </body>
+
 </html>
 <script src="./payment.js"></script>

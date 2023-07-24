@@ -282,3 +282,9 @@ justify-content: center;
 #buynow:hover{
     background-color: rgb(56, 40, 200);
 }
+
+#logout{
+    background-color: transparent;
+    color: orange;
+    font-weight: bold;
+}
