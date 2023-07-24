@@ -115,6 +115,12 @@ body {
   font-size: 25px;
 }
 
+#admin{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+
 /*------> nav bar <------*/
 
 /*------> mid part1 <------*/

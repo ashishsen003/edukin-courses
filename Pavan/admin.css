@@ -47,7 +47,8 @@ body{
 }
 
 #sidebar div h4{
-   margin: 0;
+  cursor: pointer;
+  margin: 0;
   color: black;
   font-size: 18px;
 }
@@ -125,10 +126,12 @@ body{
 /* ------students----- */
 
 .card-list{
-  width: 80%;
+  
+  width: 100%;
   margin: auto;
-  border-left: 1px solid;
+  border:1px solid;
   border-right: 1px solid;
+  margin-top: 200px;
 }
 
 .card{
@@ -168,3 +171,99 @@ body{
   padding: 3%;
   outline: none;
 }
+
+
+
+/* ------courseslist------- */
+
+
+.courseList{
+  width: 96%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1%;
+}
+
+.course{
+  display: flex;
+  gap: 30px;
+  border: 1px solid;
+}
+
+.course-img{
+  width: 50%;
+}
+
+.course-img img{
+  width: 100%;
+}
+
+.course-body{
+  padding: 2%;
+}
+
+.course-button{
+  margin-left: 100px;
+  background-color: red;
+  color: white;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+}
+
+.course-button:hover{
+  border: 1px solid;
+  color: red;
+  background-color: white;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 770px) {
+  .course{
+    flex-direction: column;
+  }
+
+  .course-img{
+    width: 100%;
+  }
+
+}
+
+/*-------admission------*/
+
+.studentList{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+.student{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 2%;
+  border: 1px solid;
+}
+
+.stud-image{
+  width: 30%;
+}
+
+.stud-image img{
+  width: 100%;
+}
+
+.student div{
+  
+  padding: 5%;
+  
+}
+
+.student p:hover{
+  font-weight: bold;
+}
+
