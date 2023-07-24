@@ -2,13 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: .3s;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     body{
-        background-image: url(https://img.freepik.com/free-vector/cute-rainbow-frame-vector-beige-background-cute-hand-drawn-style_53876-126112.jpg?w=996&t=st=1690054827~exp=1690055427~hmac=c3c2c1c96335285decada3b649f00f30eb8c95eacabe8e69255cc58d6921db5e);
+    background-image: url(https://img.freepik.com/free-vector/cute-rainbow-frame-vector-beige-background-cute-hand-drawn-style_53876-126112.jpg?w=996&t=st=1690054827~exp=1690055427~hmac=c3c2c1c96335285decada3b649f00f30eb8c95eacabe8e69255cc58d6921db5e);
     }
     
     .nav {
+    background-color: white;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -67,13 +69,13 @@
     border: solid 0.5px;
     }
     .course-section{
-        margin-top: 50px;
+    margin-top: 50px;
     }
     #message{
-        width: 80%;
-        margin: auto;
-        margin-bottom: 30px;
-        /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    /* border: 1px solid red; */
     }
     
     #container{
@@ -84,34 +86,44 @@
     gap: 30px;
     }
     .card{
-        border-radius: 15px;
-        background-color: white;
-        padding-bottom: 30px;
-        /* border: 1px dashed red; */
+    border-radius: 15px;
+    background-color: white;
+    padding-bottom: 30px;
+    /* border: 1px dashed red; */
+    }
+    .card:hover{
+    transform: scale(1.1);
+    
     }
     .card-details{
-        padding: 20px;
-        /* border: 1px dashed red; */
+    padding: 20px;
+    /* border: 1px dashed red; */
     }
-    .card-details > h3, .card-details > h5{
-        margin-top: 10px;
-    }
-    .card-details > h5{
-        color: rgb(85, 85, 85);
+    .more > h4{
+    margin-top: 10px;
+    color: rgb(85, 85, 85);
     }
     
-    .btn{
-        /* width:100px; */
-        margin-top: 20px;
-        /* height: 40px; */
-        color: white;
-        padding: 10px;
-        font-size: medium;
-        background-color:rgb(245, 39, 35);
-        border: 0;
-        border-radius: 10px;
-        position: relative;
-        right: -230px;
+    .view-btn{
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    font-size: medium;
+    background-color:rgb(245, 39, 35);
+    border: 0;
+    border-radius: 10px;
+    position: relative;
+    right: 0%;
+    }
+    #less-btn{
+        display: none;
+    }
+    .view-btn:hover{
+    background-color: rgb(204, 30, 27);
+    }
+    
+    .more{
+    display: none;
     }
     .img-card > img{
     width:100%;

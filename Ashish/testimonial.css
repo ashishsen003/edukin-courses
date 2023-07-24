@@ -4,7 +4,7 @@ body {
   font-family: "Poppins", sans-serif;
   transition: 1s;
   box-sizing: border-box;
-  background-image: url(./Images/bg.jpg);
+  background-image: url(https://img.freepik.com/free-vector/cute-rainbow-frame-vector-beige-background-cute-hand-drawn-style_53876-126112.jpg?w=996&t=st=1690054827~exp=1690055427~hmac=c3c2c1c96335285decada3b649f00f30eb8c95eacabe8e69255cc58d6921db5e);
   }
   
   /*------> nav bar <------*/
@@ -16,8 +16,8 @@ body {
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   position: sticky;
-    top: 0;
-    background-color: white;
+  top: 0;
+  background-color: white;
   }
   
   .nav > div:nth-child(1) {
@@ -72,16 +72,16 @@ body {
   }
   
   .head {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    font-size: 30px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
   }
   
   .slide-image{
-    max-height: 400px;
-    width: 100%;
-    object-fit: cover;
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
   }
   
   .video-testimonials > div{
@@ -98,58 +98,50 @@ body {
   }
   
   .video-testimonials > div iframe{
-    /* margin: auto; */
-    border: 2px solid black;
-    width: 100%;
-    height: 215px;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* margin: auto; */
+  border: 2px solid black;
+  width: 100%;
+  height: 215px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   
   .cards {
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* gap:20px */
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap:20px */
   }
   
   .card {
-    border-top: 1px solid rgb(187, 187, 187);
-    border-bottom: 1px solid rgb(187, 187, 187);
-    padding: 20px 20px 20px 10px;
-    /* border: 1px solid black; */
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding: 20px 20px 20px 10px;
+  /* border: 1px solid black; */
   }
   .card > p{
-    line-height: 1.5;
+  line-height: 1.5;
   }
   
   .parent-details{
-    display: flex;
-    /* border: 2px dashed blue; */
-    width: 230px;
-    /* justify-content: space-around; */
-    align-items: center;
+  display: flex;
+  /* border: 2px dashed blue; */
+  width: 230px;
+  /* justify-content: space-around; */
+  align-items: center;
   }
   
   .parent-details > div{
-    /* font-size: 16px; */
-    /* border: 1px solid teal; */
-    padding-left: 12px;
+  /* font-size: 16px; */
+  /* border: 1px solid teal; */
+  padding-left: 12px;
   }
   .parent-details  img{
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 100px;
-  }
-  
-  .cta {
-  /* Call-to-action styles */
-  }
-  
-  .trust-elements {
-  /* Trust elements styles */
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 100px;
   }
   
   .footer {
@@ -202,93 +194,93 @@ body {
   /*------> media queries <------*/
   
   @media screen and (min-width: 200px) and (max-width: 770px) {
-    body {
-      width: 100%;
-    }
-    .nav {
-      width: 100%;
-      justify-content: space-between;
-    }
-    .nav > div:nth-child(1) {
-      font-size: 20px;
-      width: 40%;
-    }
+  body {
+  width: 100%;
+  }
+  .nav {
+  width: 100%;
+  justify-content: space-between;
+  }
+  .nav > div:nth-child(1) {
+  font-size: 20px;
+  width: 40%;
+  }
   
-    .nav > div:nth-child(1) h1 {
-      font-size: 28px;
-    }
-    .nav > div:nth-child(2) {
-      display: none;
-    }
+  .nav > div:nth-child(1) h1 {
+  font-size: 28px;
+  }
+  .nav > div:nth-child(2) {
+  display: none;
+  }
   
-     /*------> footer <------*/
+  /*------> footer <------*/
   
-     .footer > div:nth-child(1) {
-      flex-direction: column;
-      gap: 30px;
-    }
+  .footer > div:nth-child(1) {
+  flex-direction: column;
+  gap: 30px;
+  }
   
-    .footer > div:nth-child(1) > #line2 {
-      display: none;
-    }
+  .footer > div:nth-child(1) > #line2 {
+  display: none;
+  }
   
-    .footer > div:nth-child(1) > div:nth-child(3) div {
-      flex-direction: column;
-    }
+  .footer > div:nth-child(1) > div:nth-child(3) div {
+  flex-direction: column;
+  }
   
-    .footer > div:nth-child(1) > div:nth-child(3) div p {
-      margin: 5px;
-    }
+  .footer > div:nth-child(1) > div:nth-child(3) div p {
+  margin: 5px;
+  }
   
-    .footer > div:nth-child(2) {
-      flex-direction: column;
-      gap: 0;
-      border: none;
-    }
+  .footer > div:nth-child(2) {
+  flex-direction: column;
+  gap: 0;
+  border: none;
+  }
   
-    .footer > div:nth-child(2) p {
-      margin: 5px;
-    }
+  .footer > div:nth-child(2) p {
+  margin: 5px;
+  }
   } 
   
   /* Mid section media query */
   
   @media screen and (min-width: 600px) and (max-width: 1000px) {
-    .head{
-      font-size: 20px;
-    }
-    .slide-image{
-      max-height: 250px;
-    }
-    .video-testimonials > div{
-    grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .video-testimonials > div iframe{
-      width: 95%;
-      height: 25vh;
-    }
-    .cards {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .head{
+  font-size: 20px;
+  }
+  .slide-image{
+  max-height: 250px;
+  }
+  .video-testimonials > div{
+  grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .video-testimonials > div iframe{
+  width: 95%;
+  height: 25vh;
+  }
+  .cards {
+  grid-template-columns: repeat(2, 1fr);
+  }
   }
   
   @media screen and (max-width:599px) {
-    .head{
-      font-size: 15px;
-    }
-    .slide-image{
-      display: none;
-    }
-    .video-testimonials > div{
-      grid-template-columns: repeat(1, 1fr);
-      }
-      
-    .video-testimonials > div iframe{
-      width: 95%;
-      height: 25vh;
-    }
-    .cards {
-      grid-template-columns: repeat(1, 1fr);
-    }
+  .head{
+  font-size: 15px;
+  }
+  .slide-image{
+  display: none;
+  }
+  .video-testimonials > div{
+  grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .video-testimonials > div iframe{
+  width: 95%;
+  height: 25vh;
+  }
+  .cards {
+  grid-template-columns: repeat(1, 1fr);
+  }
   }
