@@ -334,8 +334,8 @@
     }
   }
 
-  logout.addEventListener("click", function (e) {
-    e.preventDefault();
+  logout.addEventListener("click", function () {
+    // e.preventDefault();
     fetch(`https://mock-api-og1t.onrender.com/afterLogin/${id}`, {
       method: "DELETE",
     })
