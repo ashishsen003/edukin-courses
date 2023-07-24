@@ -119,6 +119,11 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 24px;
+  margin-left: 40%;
+  color: white;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 /*------> nav bar <------*/
