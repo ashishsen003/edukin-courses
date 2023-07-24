@@ -49,6 +49,7 @@ let userdata;
                 if(inputCaptchValue.value === captchaValue)
                 {
                     getData(email.value,password.value)
+                  
                 }
                 else{
                   alert("Invalid Captcha");

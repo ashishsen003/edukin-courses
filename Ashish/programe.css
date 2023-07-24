@@ -63,6 +63,9 @@
     cursor: pointer;
     }
     
+    #logout{
+        display: none;
+    }
     .nav  button:hover {
     background-color: white;
     color: black;
