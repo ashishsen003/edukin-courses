@@ -4,8 +4,8 @@ const expiryDateInput = document.getElementById('expiryDate');
 const cvvInput = document.getElementById('cvv');
 let paymentid = localStorage.getItem("paymentid")
 paymentid = JSON.parse(paymentid)
-let api = "http://localhost:3000/courses"
-let apipost = "http://localhost:3000/courses_purchased"
+let api = "https://mock-api-og1t.onrender.com/courses"
+let apipost = "https://mock-api-og1t.onrender.com/courses_purchased"
 
 
 paymentForm.addEventListener('submit', (event) => {
@@ -45,7 +45,7 @@ let register = document.getElementById("register");
 let logout = document.getElementById("logout");
 
 
-fetch("http://localhost:3000/afterLogin/")
+fetch("https://mock-api-og1t.onrender.com/afterLogin/")
   .then(res => {
     return res.json();
   }).then(data => {
@@ -73,7 +73,7 @@ function displayName(data) {
 
 logout.addEventListener("click", function (e) {
   e.preventDefault();
-  fetch(`http://localhost:3000/afterLogin/${id1}`, {
+  fetch(`https://mock-api-og1t.onrender.com/afterLogin/${id1}`, {
     method: "DELETE"
   })
     .then(res => {
