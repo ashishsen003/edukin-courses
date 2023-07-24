@@ -17,7 +17,7 @@ paymentForm.addEventListener('submit', (event) => {
       paymentForm.reset();
 
       purchasecourse(api,paymentid)
-      window.location.href = "../index.html"
+      window.location.href = "../Ashish/programe.html"
     })
     .catch((error) => {
       alert('Payment Failed. Please try again.');
