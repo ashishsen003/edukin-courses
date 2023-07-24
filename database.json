@@ -106,6 +106,21 @@
       "contact": "7845125445",
       "address": " 54df",
       "id": "n3XnTS7"
+    },
+    {
+      "name": "jahir",
+      "parents": "salim",
+      "age": "25",
+      "gender": "male",
+      "email": "jahirpppp@gmail.com",
+      "password": "11111111111",
+      "caste": "OBC",
+      "state": "Assam",
+      "grade": "kindergarten",
+      "medium": "English",
+      "contact": "9823220089",
+      "address": " kochi",
+      "id": "kHGckzl"
     }
   ],
   "courses": [

@@ -64,7 +64,7 @@ let userdata;
    function getData (email,password)
     {
         console.log("hello","userName::",email,"Password:",password)
-        fetch(`http://localhost:3000/users?email=${email}&password=${password}`)
+        fetch(`https://mock-api-og1t.onrender.com/users?email=${email}&password=${password}`)
         .then(function(res){
             return res.json();
         }).then(data=>{
@@ -96,7 +96,7 @@ let userdata;
             password:data.password
         }
         
-        fetch(`http://localhost:3000/afterLogin`,{
+        fetch(`https://mock-api-og1t.onrender.com/afterLogin`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

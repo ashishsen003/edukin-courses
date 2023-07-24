@@ -67,7 +67,7 @@ search.addEventListener("click",function(e){
     submitBTN.style.display="none"
     updateBTN.style.display="block"
     let email1= document.getElementById("search")
-    fetch(`http://localhost:3000/users?email=${email1.value}`).then(res=>{
+    fetch(`https://mock-api-og1t.onrender.com/users?email=${email1.value}`).then(res=>{
         return res.json();
     }).then(data=>{
         // console.log(data)
@@ -117,7 +117,7 @@ function display(data)
                 address:address.value
             }
     
-            fetch(`http://localhost:3000/users/${data[0].id}`,{
+            fetch(`https://mock-api-og1t.onrender.com/users/${data[0].id}`,{
                 method:"PATCH",
                 headers:{
                      "Content-type":"application/json",
@@ -137,7 +137,7 @@ function display(data)
 }
 function newStudentAdd(obj)
 {
-    fetch(`http://localhost:3000/users`,{
+    fetch(`https://mock-api-og1t.onrender.com/users`,{
         method:"POST",
         headers:{
              "Content-type":"application/json",
@@ -160,7 +160,7 @@ function callLogin(){
 
 function checkEmail(obj)
 {
-    fetch(`http://localhost:3000/users?email=${obj.email}`).then(res=>{
+    fetch(`https://mock-api-og1t.onrender.com/users?email=${obj.email}`).then(res=>{
         return res.json();
     }).then(data=>{
         // console.log(data,"OBJ is")
@@ -185,7 +185,7 @@ function isEmailPresent(data,obj)
 let register = document.querySelector("#register");
   let logout = document.getElementById("logout");
   var id;
-  fetch(`http://localhost:3000/afterLogin`)
+  fetch(`https://mock-api-og1t.onrender.com/afterLogin`)
     .then(res=>{
     return res.json();
     }).then(data=>{
@@ -215,7 +215,7 @@ let register = document.querySelector("#register");
 
   logout.addEventListener("click",function(e){
     e.preventDefault();
-    fetch(`http://localhost:3000/afterLogin/${id}`,{
+    fetch(`https://mock-api-og1t.onrender.com/afterLogin/${id}`,{
       method:"DELETE"
     })
     .then(res=>{
