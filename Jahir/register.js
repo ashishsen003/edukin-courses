@@ -19,7 +19,7 @@ let nextBTN = document.getElementById("nextBTN");
 nextBTN.addEventListener("click",function(e){
     e.preventDefault();
     formTwo.style.display="flex"
-    console.log("hii")
+    // console.log("hii")
 })
 
 let search= document.getElementById("searchBTN");
@@ -45,8 +45,21 @@ submitBTN.addEventListener("click",function(e){
         address:address.value
     }
 
-    console.log(obj);
-    newStudentAdd(obj);
+    // console.log(obj);
+
+    if(contact.value.length ==10)
+    {
+        if(password.value.length >=8)
+        {
+            // newStudentAdd(obj);
+            checkEmail(obj);
+        }else{
+            alert(" Password should be greater than 8 digit");
+        }
+    }else{
+        alert("Mobile Number should be 10 digit");
+    }
+    
 })
 
 search.addEventListener("click",function(e){
@@ -57,7 +70,7 @@ search.addEventListener("click",function(e){
     fetch(`http://localhost:3000/users?email=${email1.value}`).then(res=>{
         return res.json();
     }).then(data=>{
-        console.log(data)
+        // console.log(data)
         display(data);
     }).catch(err=>{
         console.log(err)
@@ -113,7 +126,8 @@ function display(data)
             }).then(res=>{
                 return res.json();
             }).then(data=>{
-                console.log(data)
+                callLogin();
+                // console.log(data)
             }).catch(err=>{
                 console.log(err)
             })
@@ -132,8 +146,37 @@ function newStudentAdd(obj)
     }).then(res=>{
         return res.json();
     }).then(data=>{
+        callLogin();
         console.log(data)
     }).catch(err=>{
         console.log(err);
     })
+}
+
+function callLogin(){
+    // alert("Registration Successfully Done Redirecting towards the Login Page");
+    window.location.href="./login.html";
+}
+
+function checkEmail(obj)
+{
+    fetch(`http://localhost:3000/users?email=${obj.email}`).then(res=>{
+        return res.json();
+    }).then(data=>{
+        // console.log(data,"OBJ is")
+        isEmailPresent(data,obj);
+    }).catch(err=>{
+        console.log(err)
+    })
+}
+
+function isEmailPresent(data,obj)
+{
+    if(data.length >0)
+    {
+         alert("This Email is Already Used")
+    }else{
+    //    console.log(obj)
+        newStudentAdd(obj);
+    }
 }
