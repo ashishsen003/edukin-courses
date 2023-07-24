@@ -48,7 +48,17 @@ let userdata;
 
                 if(inputCaptchValue.value === captchaValue)
                 {
-                    getData(email.value,password.value)
+                    if(email.value=="jahirpp1999@gmail.com" && password.value=="123456789")
+                    {
+                        
+                        // alert("add")
+                        window.location.href="../Pavan/admin.html";
+                        callAfterLogin(obj);
+
+                    }else{
+                        getData(email.value,password.value)
+                    }
+                  
                 }
                 else{
                   alert("Invalid Captcha");

@@ -490,15 +490,7 @@
       "faq5ans": "While the live lectures will be conducted for all participants, the course fosters a playful environment for children to interact with their peers during activities and playtime."
     }
   ],
-  "afterLogin": [
-    {
-      "email": "amolkpatil22@gmail.com",
-      "name": "amol patil",
-      "login_Check": true,
-      "password": "123456789",
-      "id": 1
-    }
-  ],
+  "afterLogin": [],
   "admin": [
     {
       "name": "jahir",
