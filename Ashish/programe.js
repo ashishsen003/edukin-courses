@@ -16,7 +16,7 @@ let arr = [
     }
 ]
 
-fetchdata()
+fetchdata(`http://localhost:3000/courses_purchased`)
 async function fetchdata(url){
     try{
         let res = await fetch(url)
