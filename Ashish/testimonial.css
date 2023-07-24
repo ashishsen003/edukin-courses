@@ -123,6 +123,9 @@ body {
   .card > p{
   line-height: 1.5;
   }
+  #logout{
+    display: none;
+  }
   
   .parent-details{
   display: flex;

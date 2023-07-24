@@ -25,6 +25,13 @@ let admin1Email = document.querySelector(".admin1-email");
 let admin1Pass = document.querySelector(".admin1-pass");
 
 
+let logout = document.querySelector(".logout")
+
+logout.addEventListener("click", (event)=>{
+  event.preventDefault()
+  window.location.href="../index.html"
+ 
+})
 
 async function fetching(url){
   try{
@@ -284,3 +291,49 @@ viewCourses.addEventListener("click", (event)=>{
 })
 
 
+let register = document.querySelector("#register");
+// let logout = document.getElementById("logout");
+var id;
+fetch(`http://localhost:3000/afterLogin`)
+  .then((res) => {
+    return res.json();
+  })
+  .then((data) => {
+    displayName(data[0]);
+    // console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+function displayName(data) {
+  if (data != null) {
+    let name = data.name;
+    name = name.split(" ");
+    id = data.id;
+    console.log(id);
+    console.log(name[0]);
+    register.innerText = name[0];
+    logout.style.display = "block";
+  } else {
+    register.innerText = "Register";
+    logout.style.display = "none";
+  }
+}
+
+logout.addEventListener("click", function (e) {
+  e.preventDefault();
+  fetch(`http://localhost:3000/afterLogin/${id}`, {
+    method: "DELETE",
+  })
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      // console.log(data);
+      displayName(null);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  console.log(id);
+});

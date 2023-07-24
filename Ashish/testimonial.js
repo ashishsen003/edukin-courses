@@ -22,3 +22,52 @@ setInterval(() =>{
     }
 
 },2000)
+
+
+
+let register = document.querySelector("#register");
+  let logout = document.getElementById("logout");
+  var id;
+  fetch(`http://localhost:3000/afterLogin`)
+    .then(res=>{
+    return res.json();
+    }).then(data=>{
+      displayName(data[0]);
+      // console.log(data);
+    }).catch(err=>{
+    console.log(err);
+  })
+  function displayName(data)
+  {
+    if(data != null)
+    {
+      let name = data.name;
+      name = name.split(" ");
+      id = data.id;
+      console.log(id)
+      console.log(name[0])
+      register.innerText = name[0];
+      logout.style.display="block";
+      searchData.style.display="flex"
+    }else{
+      register.innerText="Register";
+      logout.style.display="none";
+      searchData.style.display="none"
+    }
+  }
+
+  logout.addEventListener("click",function(e){
+    e.preventDefault();
+    fetch(`http://localhost:3000/afterLogin/${id}`,{
+      method:"DELETE"
+    })
+    .then(res=>{
+    return res.json();
+    }).then(data=>{
+      // console.log(data);
+      displayName(null)
+    }).catch(err=>{
+    console.log(err);
+    })
+    console.log(id)
+  })
