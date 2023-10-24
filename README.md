@@ -12,8 +12,11 @@ Edukin Language Learning Project is an ambitious and innovative endeavor aimed a
 ## This project was created by:
 
 Team Lead: Ashish Kumar (https://github.com/ashishsen003)
+
 Member: Amol Patil (https://github.com/amolkpatil22)
+
 Member: Jahir Pendhari (https://github.com/JahirPendhari09)
+
 Member: PavanBhaskarThota (https://github.com/PavanBhaskarThota)
 
 ## ScreenShots:
