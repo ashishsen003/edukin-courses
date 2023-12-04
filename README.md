@@ -62,11 +62,3 @@ To run the project locally, follow these steps:
    ```
 
 The project will be available at `http://localhost:3000`.
-
-## Deployment
-The project is deployed on Vercel. You can access it [here](https://my-app-six-coral.vercel.app/home).
-
-## Backend Server
-The backend server is hosted at [https://destination-api00.onrender.com/](https://destination-api00.onrender.com/). It provides the following endpoints:
-- Tours
-- Users
