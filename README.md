@@ -48,5 +48,5 @@ To run the project locally, follow these steps:
 
 2. Navigate to the project directory:
    ```bash
-   cd Travel-Seekers
+   cd remarkable-ice-6564
    ```
