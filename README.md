@@ -18,7 +18,7 @@ Member: PavanBhaskarThota (https://github.com/PavanBhaskarThota)
 ### Home Page:
 ![homepage](https://github.com/ashishsen003/remarkable-ice-6564/assets/130379028/644b8cd3-943a-4e0a-8282-541818d172d6)
 
-### CoursesPage:
+### Courses Page:
 ![coursesPage](https://github.com/ashishsen003/remarkable-ice-6564/assets/130379028/f0c53d29-7726-4562-84ca-06a65d873042)
 
 ### Admission Page:
