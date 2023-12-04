@@ -50,15 +50,3 @@ To run the project locally, follow these steps:
    ```bash
    cd Travel-Seekers
    ```
-
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-   ```bash
-   npm start
-   ```
-
-The project will be available at `http://localhost:3000`.
