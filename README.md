@@ -4,7 +4,7 @@
 
 Edukin Language Learning Project is an ambitious and innovative endeavor aimed at revolutionizing the way children learn new languages. Developed by a team of dedicated language enthusiasts and tech-savvy educators, our project seeks to empower young minds with invaluable linguistic skills while fostering cross-cultural understanding and global awareness.
 
-## Project Code:- remarkable-ice-6564
+## Project Code: remarkable-ice-6564
 
 ## Netlify Link: https://zingy-heliotrope-1fffbb.netlify.app/
 
@@ -31,3 +31,55 @@ Member: PavanBhaskarThota (https://github.com/PavanBhaskarThota)
 
 ### TestimonialPage:
 ![testimonialPage](https://github.com/ashishsen003/remarkable-ice-6564/assets/130379028/0ec342a7-60fc-4099-820b-7a775a1035d8)
+
+## Tech Stack
+- JavaScript
+- CSS
+- HTML
+- Json Server
+
+## Getting Started
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone [repository URL]
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd Travel-Seekers
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+
+The project will be available at `http://localhost:3000`.
+
+## Deployment
+The project is deployed on Vercel. You can access it [here](https://my-app-six-coral.vercel.app/home).
+
+## Backend Server
+The backend server is hosted at [https://destination-api00.onrender.com/](https://destination-api00.onrender.com/). It provides the following endpoints:
+- Tours
+- Users
+
+## Contributing
+If you'd like to contribute to Travel Seekers, please follow these guidelines:
+- Fork the repository on GitHub.
+- Create a new branch for your feature or bug fix.
+- Make your changes and test thoroughly.
+- Create a pull request, describing your changes and improvements.
+
+## License
+This project is open-source and available under the [MIT License](LICENSE).
+
+Feel free to reach out to the team members listed above for any questions or collaboration opportunities. Happy traveling with Travel Seekers!
+
