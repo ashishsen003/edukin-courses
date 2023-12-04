@@ -70,16 +70,3 @@ The project is deployed on Vercel. You can access it [here](https://my-app-six-c
 The backend server is hosted at [https://destination-api00.onrender.com/](https://destination-api00.onrender.com/). It provides the following endpoints:
 - Tours
 - Users
-
-## Contributing
-If you'd like to contribute to Travel Seekers, please follow these guidelines:
-- Fork the repository on GitHub.
-- Create a new branch for your feature or bug fix.
-- Make your changes and test thoroughly.
-- Create a pull request, describing your changes and improvements.
-
-## License
-This project is open-source and available under the [MIT License](LICENSE).
-
-Feel free to reach out to the team members listed above for any questions or collaboration opportunities. Happy traveling with Travel Seekers!
-
