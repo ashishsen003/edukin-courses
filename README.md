@@ -4,9 +4,6 @@ Edukin Language Learning Project is an ambitious and innovative endeavor aimed a
 
 ### Netlify Link: https://zingy-heliotrope-1fffbb.netlify.app/
 
-### Project Code: remarkable-ice-6564
-
-
 ### This project was created by:
 
 Team Lead: Ashish Kumar (https://github.com/ashishsen003)
@@ -46,5 +43,5 @@ To run the project locally, follow these steps:
 
 2. Navigate to the project directory:
    ```bash
-   cd remarkable-ice-6564
+   cd edukin-courses
    ```
