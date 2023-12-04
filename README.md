@@ -15,16 +15,16 @@ Member: Jahir Pendhari (https://github.com/JahirPendhari09)
 Member: PavanBhaskarThota (https://github.com/PavanBhaskarThota)
 
 ## ScreenShots:
-### HomePage:
+### Home Page:
 ![homepage](https://github.com/ashishsen003/remarkable-ice-6564/assets/130379028/644b8cd3-943a-4e0a-8282-541818d172d6)
 
 ### CoursesPage:
 ![coursesPage](https://github.com/ashishsen003/remarkable-ice-6564/assets/130379028/f0c53d29-7726-4562-84ca-06a65d873042)
 
-### AdmissionPage:
+### Admission Page:
 ![admissionPage](https://github.com/ashishsen003/remarkable-ice-6564/assets/130379028/9058f4cc-161f-4c0c-a19d-5f3b598505e3)
 
-### TestimonialPage:
+### Testimonial Page:
 ![testimonialPage](https://github.com/ashishsen003/remarkable-ice-6564/assets/130379028/0ec342a7-60fc-4099-820b-7a775a1035d8)
 
 ## Tech Stack
