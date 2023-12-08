@@ -2,7 +2,7 @@
 
 Edukin Language Learning Project is an ambitious and innovative endeavor aimed at revolutionizing the way children learn new languages. Developed by a team of dedicated language enthusiasts and tech-savvy educators, our project seeks to empower young minds with invaluable linguistic skills while fostering cross-cultural understanding and global awareness.
 
-### Netlify Link: https://zingy-heliotrope-1fffbb.netlify.app/
+### Netlify Link: https://edukin-language-learning.netlify.app
 
 ### This project was created by:
 
